@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import "~bulma"
 
 // Config vars
 $kaldi-red: #FD461E
@@ -6,6 +7,9 @@ $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
+
+$white: #ffffff
+$black: #000000
 
 .content .taglist
   list-style: none
@@ -39,4 +43,15 @@ $primary-invert: $kaldi-red-invert
 .margin-top-0
   margin-top: 0 !important
 
-@import "~bulma"
+.navbar
+  min-height: 0px
+
+  .container
+    min-height: 0px
+
+  &.top-navbar
+    color: $white
+    background-color: $black
+
+    a.navbar-item
+      color: $white
