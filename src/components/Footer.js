@@ -13,9 +13,9 @@ const Footer = () => (
     <div className='container'>
       <div className='columns'>
         <div className='column is-half'>
-          <div className='contact-name text-muted'>
-            <h5>The Educational Justice Institute</h5>
-            <h6>Massachusetts Institute of Technology</h6>
+          <div className='contact-name'>
+            <h1 className='is-size-4'>The Educational Justice Institute</h1>
+            <h5 className='is-size-5'>Massachusetts Institute of Technology</h5>
           </div>
           <div className='contact-address'>
           <p>77 Massachusetts Ave.</p>
@@ -67,7 +67,11 @@ const Footer = () => (
           </a>
         </div>
       </div>
-      <p className='text-muted'>&copy; 2018 The Educational Justice Institute</p>
+    </div>
+    <div className="copyright">
+      <div className='container'>
+        <p className='has-text-grey-lighter'>&copy; 2018 The Educational Justice Institute</p>
+      </div>
     </div>
   </footer>
 )

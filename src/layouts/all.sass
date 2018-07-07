@@ -2,14 +2,7 @@
 @import "~bulma"
 
 // Config vars
-$kaldi-red: #FD461E
-$kaldi-red-invert: #fff
-
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-
-$white: #ffffff
-$black: #000000
+@import "src/layouts/styles/variables"
 
 .content .taglist
   list-style: none
@@ -43,15 +36,5 @@ $black: #000000
 .margin-top-0
   margin-top: 0 !important
 
-.navbar
-  min-height: 0px
-
-  .container
-    min-height: 0px
-
-  &.top-navbar
-    color: $white
-    background-color: $black
-
-    a.navbar-item
-      color: $white
+@import "src/layouts/styles/navbar"
+@import "src/layouts/styles/footer"

@@ -1,0 +1,28 @@
+@import "src/layouts/styles/variables"
+
+.navbar
+  min-height: 0px
+  background-color: $mit-light-gray
+
+  .container
+    min-height: 0px
+
+  .navbar-item img
+    max-height: none
+    height: auto
+    width: 20rem !important
+
+  &.main-navbar
+    padding: 1rem 0
+
+  &.top-navbar
+    color: $white
+    background-color: $black
+
+    a.navbar-item
+      color: $white
+      padding: 0.3rem 1.0rem 0.3rem 0rem
+
+      &:hover, &.is-active, a.navbar-link:hover, a.navbar-link.is-active
+        background-color: transparent !important
+        text-decoration: underline
