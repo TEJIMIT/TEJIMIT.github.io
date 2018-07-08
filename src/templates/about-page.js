@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -9,13 +10,32 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+          <aside className="column is-2 menu menu-left">
+              <p className="menu-label">
+                <Link className="menu-link" to='/about/'>About</Link>
+              </p>
+              <ul className="menu-list">
+                <li>
+                  <Link
+                    className="menu-link"
+                    to="/about/mission/">
+                    Mission
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="menu-link"
+                    to="/about/team/">
+                    Team
+                  </Link>
+                </li>
+              </ul>
+          </aside>
+          <div className="column is-7">
+              <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
               <PageContent className="content" content={content} />
-            </div>
           </div>
         </div>
       </div>
@@ -31,7 +51,7 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
-
+  console.log(post)
   return (
     <AboutPageTemplate
       contentComponent={HTMLContent}
@@ -53,6 +73,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        path
       }
     }
   }

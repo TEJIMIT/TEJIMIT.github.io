@@ -1,19 +1,15 @@
 ---
 templateKey: 'about-page'
-path: /about
-title: About our values
+path: /about/
+title: About Us
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel eros donec ac odio tempor. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Quam nulla porttitor massa id neque. Turpis massa tincidunt dui ut ornare. Pharetra et ultrices neque ornare. Tempus quam pellentesque nec nam aliquam sem et tortor. Quam elementum pulvinar etiam non quam lacus suspendisse. Tortor pretium viverra suspendisse potenti nullam ac tortor. Turpis in eu mi bibendum neque egestas congue quisque.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Placerat orci nulla pellentesque dignissim enim sit amet. Ac turpis egestas sed tempus urna et pharetra pharetra. Luctus venenatis lectus magna fringilla urna. Dolor sit amet consectetur adipiscing elit. Urna nunc id cursus metus aliquam eleifend mi in nulla. Pellentesque elit eget gravida cum sociis natoque penatibus et. Tristique sollicitudin nibh sit amet commodo. Id aliquet risus feugiat in ante. Sodales neque sodales ut etiam sit amet nisl. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Arcu odio ut sem nulla pharetra diam sit. Id volutpat lacus laoreet non curabitur gravida. Eget mauris pharetra et ultrices. Sit amet purus gravida quis blandit turpis cursus in. Volutpat est velit egestas dui. Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+Interdum consectetur libero id faucibus nisl tincidunt. Arcu ac tortor dignissim convallis aenean et tortor at risus. Ultricies mi eget mauris pharetra et ultrices neque. Aenean et tortor at risus. Quisque egestas diam in arcu cursus euismod quis viverra nibh. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Et pharetra pharetra massa massa ultricies mi quis. Vitae proin sagittis nisl rhoncus mattis rhoncus. At elementum eu facilisis sed odio morbi. Velit ut tortor pretium viverra suspendisse potenti nullam. Pulvinar elementum integer enim neque volutpat. Blandit turpis cursus in hac habitasse. Dignissim suspendisse in est ante in. In ante metus dictum at tempor commodo ullamcorper a. Hendrerit dolor magna eget est lorem ipsum dolor sit. Odio pellentesque diam volutpat commodo sed egestas. At varius vel pharetra vel turpis. Lacinia at quis risus sed vulputate.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Nunc sed id semper risus in. Erat velit scelerisque in dictum non consectetur a erat. Vel eros donec ac odio tempor orci dapibus ultrices in. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. In pellentesque massa placerat duis ultricies lacus sed. Nisl suscipit adipiscing bibendum est. Massa sed elementum tempus egestas sed sed risus. Vel eros donec ac odio tempor orci dapibus. Dui sapien eget mi proin sed. Dictum non consectetur a erat nam. Netus et malesuada fames ac turpis egestas maecenas.
+
+Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Non enim praesent elementum facilisis leo vel fringilla est ullamcorper. Pellentesque elit eget gravida cum sociis natoque penatibus. Montes nascetur ridiculus mus mauris. Velit aliquet sagittis id consectetur. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Ornare massa eget egestas purus viverra accumsan in nisl. Pellentesque id nibh tortor id aliquet. Vitae turpis massa sed elementum tempus egestas. Volutpat consequat mauris nunc congue. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Quam lacus suspendisse faucibus interdum posuere.

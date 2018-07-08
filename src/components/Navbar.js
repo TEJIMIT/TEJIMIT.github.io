@@ -42,7 +42,7 @@ class Navbar extends React.Component {
           </div>
           <div className={`navbar-menu ${this.state.menu}`} id="navMenu">
             <div className="navbar-end">
-              <Link className="navbar-item" to="/mission/">
+              <Link className="navbar-item" to="/about/">
                 About
               </Link>
               <Link className="navbar-item" to="/projects/">

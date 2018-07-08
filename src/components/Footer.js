@@ -18,9 +18,11 @@ const Footer = () => (
             <h5 className='is-size-5'>Massachusetts Institute of Technology</h5>
           </div>
           <div className='contact-address'>
-          <p>77 Massachusetts Ave.</p>
-          <p>24-612</p>
-          <p>Cambridge, MA 02139</p>
+          <p>
+            77 Massachusetts Ave. <br />
+            24-612 <br />
+            Cambridge, MA 02139
+          </p>
           </div>
           <div className='contact-phone'>
             <p>(617) 452-3756</p>
@@ -32,7 +34,7 @@ const Footer = () => (
         <div className='column'>
           <ul className='footer-navigation'>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/mission/'>About</Link></li>
+            <li><Link to='/about/'>About</Link></li>
             <li><Link to='/projects/'>Projects</Link></li>
             <li><Link to='/news/'>News</Link></li>
             <li><Link to='/blog/'>Blog</Link></li>
