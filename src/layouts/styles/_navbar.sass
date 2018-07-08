@@ -7,7 +7,21 @@
   .container
     min-height: 0px
 
-  .navbar-item img
+  &-brand &-burger span
+    color: $white
+    height: 2px
+    width: 18px
+
+
+  &-menu
+    background-color: transparent
+
+    a.navbar-item
+      &:hover, &.is-active
+        color: $white
+        background-color: $mit-dark-gray
+
+  &-item img
     max-height: none
     height: auto
     width: 20rem !important
