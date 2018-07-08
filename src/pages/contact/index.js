@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="section">
       <div className='container'>
-        <h2 className='is-size-2 has-text-weight-bold is-bold-light'>Contact</h2>
+        <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Contact</h2>
         <div className='columns is-desktop contact'>
           <div className='column contact-map'>
             <img src={map} alt="Map" className="image"/>

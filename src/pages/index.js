@@ -2,29 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
+import RightNews from '../components/RightNews'
+
+
 export default class IndexPage extends React.Component {
-
-  renderPosts(posts) {
-    return (
-      posts.map(({ node: post }) => (
-          <div key={post.id} >
-            <p>
-              <Link className="has-text-primary" to={post.fields.slug}>
-                {post.frontmatter.title}
-              </Link>
-              <br />
-              <small>{post.frontmatter.date}</small>
-            </p>
-            <p>
-              <Link to={post.fields.slug}>
-                Read More →
-              </Link>
-            </p>
-          </div>
-        ))
-    )
-  }
-
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -34,15 +15,12 @@ export default class IndexPage extends React.Component {
         <div className="container">
           <div className="columns is-desktop">
             <div className="column">
-              Left
+              <h3 className="title has-text-weight-bold is-size-3">
+                Home Page
+              </h3>
             </div>
             <div className="column is-one-quarter-desktop">
-              <div className="box">
-                <h3 className="has-text-weight-bold is-size-3">
-                  Latest News
-                </h3>
-                {this.renderPosts(posts)}
-              </div>
+              <RightNews posts={posts} />
             </div>
           </div>
         </div>
@@ -68,7 +46,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 100)
           id
           fields {
             slug

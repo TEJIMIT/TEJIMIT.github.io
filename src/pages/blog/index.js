@@ -8,17 +8,16 @@ class Blogs extends React.Component {
   renderPosts(posts) {
     return (
       posts.map(({ node: post }) => (
-          <div key={post.id} >
-            <p>
+          <div key={post.id} className="box">
               <Link className="has-text-primary" to={post.fields.slug}>
                 <h5 className="has-text-weight-bold is-size-5">
                   {post.frontmatter.title}
                 </h5>
               </Link>
               <small>{post.frontmatter.date}</small>
-            </p>
             <p>
               {post.excerpt}
+              <br />
               <Link to={post.fields.slug}>
                 Read More →
               </Link>
@@ -35,16 +34,22 @@ class Blogs extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <h3 className="has-text-weight-bold is-size-3">
-            Blog Posts
-          </h3>
-          {this.renderPosts(posts)}
+          <div className="columns">
+            <div className="column is-three-quarters">
+              <h3 className="title has-text-weight-bold is-size-3">
+                Blog Posts
+              </h3>
+              {this.renderPosts(posts)}
+            </div>
+            <div className="column">
+                Right Side
+            </div>
+          </div>
         </div>
       </section>
     )
   }
 }
-
 
 Blogs.propTypes = {
   data: PropTypes.shape({
@@ -53,7 +58,6 @@ Blogs.propTypes = {
     }),
   }),
 }
-
 export default Blogs
 
 

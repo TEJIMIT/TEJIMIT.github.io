@@ -31,19 +31,21 @@ const AboutPage = ({ data }) => {
         <aside className="column is-2 menu menu-left">
             <section className="section">
               <p className="menu-label">
-                <Link className="menu-link" to='/about/'>About</Link>
+                <Link
+                  className={`menu-item ${post.frontmatter.path === '/about/' ? 'is-active' : ''}`}
+                  to='/about/'>About</Link>
               </p>
               <ul className="menu-list">
                 <li>
                   <Link
-                    className="menu-link"
+                    className={`menu-item ${post.frontmatter.path === '/about/mission/' ? 'is-active' : ''}`}
                     to="/about/mission/">
                     Mission
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="menu-link"
+                    className={`menu-item ${post.frontmatter.path === '/about/team/' ? 'is-active' : ''}`}
                     to="/about/team/">
                     Team
                   </Link>
