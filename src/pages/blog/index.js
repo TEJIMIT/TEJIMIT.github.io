@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-export default class IndexPage extends React.Component {
+
+class Blogs extends React.Component {
 
   renderPosts(posts) {
     return (
@@ -10,12 +11,14 @@ export default class IndexPage extends React.Component {
           <div key={post.id} >
             <p>
               <Link className="has-text-primary" to={post.fields.slug}>
-                {post.frontmatter.title}
+                <h5 className="has-text-weight-bold is-size-5">
+                  {post.frontmatter.title}
+                </h5>
               </Link>
-              <br />
               <small>{post.frontmatter.date}</small>
             </p>
             <p>
+              {post.excerpt}
               <Link to={post.fields.slug}>
                 Read More →
               </Link>
@@ -32,26 +35,18 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <div className="columns is-desktop">
-            <div className="column">
-              Left
-            </div>
-            <div className="column is-one-quarter-desktop">
-              <div className="box">
-                <h3 className="has-text-weight-bold is-size-3">
-                  Latest News
-                </h3>
-                {this.renderPosts(posts)}
-              </div>
-            </div>
-          </div>
+          <h3 className="has-text-weight-bold is-size-3">
+            Blog Posts
+          </h3>
+          {this.renderPosts(posts)}
         </div>
       </section>
     )
   }
 }
 
-IndexPage.propTypes = {
+
+Blogs.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -59,10 +54,12 @@ IndexPage.propTypes = {
   }),
 }
 
+export default Blogs
+
+
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogQuery {
     allMarkdownRemark(
-      limit: 3,
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
     ) {

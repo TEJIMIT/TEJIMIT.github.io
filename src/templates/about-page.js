@@ -8,9 +8,28 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <aside className="column is-2 menu menu-left">
+      <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
+        {title}
+      </h2>
+      <PageContent className="content" content={content} />
+    </section>
+  )
+}
+
+AboutPageTemplate.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
+}
+
+const AboutPage = ({ data }) => {
+  const { markdownRemark: post } = data
+
+  return (
+    <div className='container'>
+      <div className='columns'>
+        <aside className="column is-2 menu menu-left">
+            <section className="section">
               <p className="menu-label">
                 <Link className="menu-link" to='/about/'>About</Link>
               </p>
@@ -30,34 +49,17 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                   </Link>
                 </li>
               </ul>
-          </aside>
-          <div className="column is-7">
-              <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-          </div>
+            </section>
+        </aside>
+        <div className="column is-7">
+          <AboutPageTemplate
+            contentComponent={HTMLContent}
+            title={post.frontmatter.title}
+            content={post.html}
+          />
         </div>
       </div>
-    </section>
-  )
-}
-
-AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
-
-const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
-  console.log(post)
-  return (
-    <AboutPageTemplate
-      contentComponent={HTMLContent}
-      title={post.frontmatter.title}
-      content={post.html}
-    />
+    </div>
   )
 }
 
