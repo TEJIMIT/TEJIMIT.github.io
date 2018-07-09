@@ -1,10 +1,11 @@
 import React from 'react'
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+    <section className="section">
+      <div className="container">
+        <h2 className="title is-size-2 has-text-weight-bold is-bold-light">Page Not Found</h2>
+      </div>
+    </section>
 )
 
 export default NotFoundPage

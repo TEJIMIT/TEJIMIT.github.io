@@ -1,5 +1,6 @@
 import React from 'react'
 import Links from 'gatsby-link'
+import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
 export const ProjectPageTemplate = ({ title, content, contentComponent }) => {
