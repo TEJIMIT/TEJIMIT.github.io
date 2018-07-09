@@ -1,8 +1,8 @@
 ---
-templateKey: 'about-page'
-path: /about/mission/
+templateKey: about-page
 title: Mission
 ---
+**Providing  students with non-traditional learning and social justice opportunities while preparing incarcerated students for successful reentry through education and technology.**
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient montes. Nibh cras pulvinar mattis nunc sed blandit libero volutpat. Id leo in vitae turpis massa sed elementum tempus egestas. Varius quam quisque id diam vel quam elementum. Malesuada proin libero nunc consequat interdum varius sit amet. Tincidunt eget nullam non nisi est sit amet facilisis magna. Ullamcorper velit sed ullamcorper morbi tincidunt. Egestas diam in arcu cursus euismod quis viverra nibh cras. Quis hendrerit dolor magna eget est. Amet risus nullam eget felis eget nunc. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Amet cursus sit amet dictum sit amet justo donec enim. Ipsum faucibus vitae aliquet nec. Et malesuada fames ac turpis egestas. Urna duis convallis convallis tellus. Condimentum mattis pellentesque id nibh. Vel facilisis volutpat est velit. In nisl nisi scelerisque eu ultrices vitae auctor eu. Curabitur gravida arcu ac tortor dignissim convallis aenean et.
 
