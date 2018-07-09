@@ -7,7 +7,6 @@ import Link from 'gatsby-link'
 class RightNews extends React.Component {
 
   renderPosts(posts) {
-    console.log(posts)
     return (
       posts.map(({ node: post }) => (
           <div className="news-item" key={post.id} >

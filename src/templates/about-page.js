@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
+import RightNews from '../components/RightNews'
+
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
@@ -23,8 +25,9 @@ AboutPageTemplate.propTypes = {
 }
 
 const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
-
+  const { page } = data
+  const { edges: posts } = data.blogs
+  
   return (
     <div className='container'>
       <div className='columns'>
@@ -32,20 +35,20 @@ const AboutPage = ({ data }) => {
             <section className="section">
               <p className="menu-label">
                 <Link
-                  className={`menu-item ${post.frontmatter.path === '/about/' ? 'is-active' : ''}`}
+                  className={`menu-item ${page.frontmatter.path === '/about/' ? 'is-active' : ''}`}
                   to='/about/'>About</Link>
               </p>
               <ul className="menu-list">
                 <li>
                   <Link
-                    className={`menu-item ${post.frontmatter.path === '/about/mission/' ? 'is-active' : ''}`}
+                    className={`menu-item ${page.frontmatter.path === '/about/mission/' ? 'is-active' : ''}`}
                     to="/about/mission/">
                     Mission
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className={`menu-item ${post.frontmatter.path === '/about/team/' ? 'is-active' : ''}`}
+                    className={`menu-item ${page.frontmatter.path === '/about/team/' ? 'is-active' : ''}`}
                     to="/about/team/">
                     Team
                   </Link>
@@ -56,10 +59,15 @@ const AboutPage = ({ data }) => {
         <div className="column is-7">
           <AboutPageTemplate
             contentComponent={HTMLContent}
-            title={post.frontmatter.title}
-            content={post.html}
+            title={page.frontmatter.title}
+            content={page.html}
           />
         </div>
+        <aside className="column is-3">
+          <section className="section">
+            <RightNews posts={posts} />
+          </section>
+        </aside>
       </div>
     </div>
   )
@@ -73,12 +81,32 @@ export default AboutPage
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    page: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
         path
       }
+    }
+    blogs: allMarkdownRemark(
+        limit: 3,
+        sort: { order: DESC, fields: [frontmatter___date] },
+        filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      ) {
+        edges {
+          node {
+            excerpt(pruneLength: 100)
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              templateKey
+              date(formatString: "MMMM DD, YYYY")
+            }
+          }
+        }
     }
   }
 `
