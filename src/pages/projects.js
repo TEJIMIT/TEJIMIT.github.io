@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-import RightNews from '../../components/RightNews'
+import RightNews from '../components/RightNews'
 
 
 class Projects extends React.Component {
