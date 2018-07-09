@@ -1,5 +1,5 @@
 import React from 'react';
-import map from '../img/mit_esg_map.png'
+import map from '../../img/mit_esg_map.png'
 
 const Contact = () => {
   return (
