@@ -70,7 +70,7 @@ export const pageQuery = graphql`
     blogs: allMarkdownRemark(
         limit: 3,
         sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+        filter: { frontmatter: { templateKey: { eq: "news-post" } }}
       ) {
         edges {
           node {
