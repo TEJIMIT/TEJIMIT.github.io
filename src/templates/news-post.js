@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 
-export const BlogPostTemplate = ({
+export const NewsPostTemplate = ({
   content,
   contentComponent,
   description,
@@ -16,7 +16,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-      <div id="blog" className="columns">
+      <div id="news-post" className="columns">
         {helmet || ''}
         <div className="column is-10 is-offset-1">
           <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
@@ -41,7 +41,7 @@ export const BlogPostTemplate = ({
   )
 }
 
-BlogPostTemplate.propTypes = {
+NewsPostTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -49,11 +49,11 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.instanceOf(Helmet),
 }
 
-const BlogPost = ({ data }) => {
+const NewsPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <BlogPostTemplate
+    <NewsPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
@@ -64,16 +64,16 @@ const BlogPost = ({ data }) => {
   )
 }
 
-BlogPost.propTypes = {
+NewsPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default BlogPost
+export default NewsPost
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query NewsPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

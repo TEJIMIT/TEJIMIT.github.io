@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 
-class Blogs extends React.Component {
+class New extends React.Component {
 
   renderPosts(posts) {
     return (
@@ -32,7 +32,7 @@ class Blogs extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div id="blog" className="columns">
+      <div id="news" className="columns">
         <div className="column is-three-quarters">
           <h3 className="title has-text-weight-bold is-size-3">
             Blog Posts
