@@ -1,8 +1,8 @@
 @import "src/layouts/styles/variables"
+@import "src/layouts/styles/fonts"
 
 .navbar
   min-height: 0px
-  background-color: $mit-light-gray
 
   .container
     min-height: 0px
@@ -12,14 +12,16 @@
     height: 2px
     width: 18px
 
-
   &-menu
     background-color: transparent
 
     a.navbar-item
+      font-family: "ApexSansBold", Arial, sans-serif
+      font-weight: bold
+      display: flex
+      align-items: flex-end
       &:hover, &.is-active
-        color: $white
-        background-color: $mit-dark-gray
+        color: $mit-red
 
   &-item img
     max-height: none
@@ -27,7 +29,10 @@
     width: 20rem !important
 
   &.main-navbar
-    padding: 1rem 0
+    padding: 0
+    background: #ffffff
+    box-shadow: 0 0 10px 0 $mit-dark-gray
+    width: 100%
 
   &.top-navbar
     color: $white

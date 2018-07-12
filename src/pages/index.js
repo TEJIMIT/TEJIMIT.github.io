@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
+import Header from '../components/Header'
 import RightNews from '../components/RightNews'
 
 
@@ -11,20 +12,23 @@ export default class IndexPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <section className="section">
-        <div className="container">
-          <div className="columns is-desktop">
-            <div className="column">
-              <h3 className="title has-text-weight-bold is-size-3">
-                Home Page
-              </h3>
-            </div>
-            <div className="column is-one-quarter-desktop">
-              <RightNews posts={posts} />
-            </div>
+      <div id="home">
+        <Header />
+        <section className="section">
+          <div className="container">
+              <div className="columns is-desktop">
+                <div className="column">
+                  <h3 className="title has-text-weight-bold is-size-3">
+                    Home Page
+                  </h3>
+                </div>
+                <div className="column is-one-quarter-desktop">
+                  <RightNews posts={posts} />
+                </div>
+              </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     )
   }
 }
@@ -42,7 +46,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 3,
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "news-post" } }}
     ) {
       edges {
         node {

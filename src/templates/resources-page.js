@@ -7,21 +7,27 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
   const ResourcesContent = contentComponent || Content
 
   return (
-    <div id="resources">
-      <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
-        {title}
-      </h2>
-      <PageContent className="content" content={content} />
-    </div>
+    <section className="section">
+      <div className="container">
+        <div id="resources">
+          <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
+            {title}
+          </h2>
+          <PageContent className="content" content={content} />
+        </div>
+      </div>
+    </section>
   );
 }
 
 
 const ResourcesPage = () => {
   return (
-    <div>
-      <h1>Resources Page</h1>
-    </div>
+    <section className="section">
+      <div className="container">
+        <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Resources Page</h2>
+      </div>
+    </section>
   )
 }
 

@@ -29,41 +29,73 @@ const AboutPage = ({ data }) => {
   const { edges: posts } = data.blogs
 
   return (
-    <div id="about" className='columns'>
-      <aside className="column is-2 menu menu-left">
-        <p className="menu-label">
-          <Link
-            className={`menu-item ${page.frontmatter.path === '/about/' ? 'is-active' : ''}`}
-            to='/about/'>About</Link>
-        </p>
-        <ul className="menu-list">
-          <li>
-            <Link
-              className={`menu-item ${page.frontmatter.path === '/about/mission/' ? 'is-active' : ''}`}
-              to="/about/mission/">
-              Mission
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={`menu-item ${page.frontmatter.path === '/about/team/' ? 'is-active' : ''}`}
-              to="/about/team/">
-              Team
-            </Link>
-          </li>
-        </ul>
-      </aside>
-      <div className="column is-7">
-        <AboutPageTemplate
-          contentComponent={HTMLContent}
-          title={page.frontmatter.title}
-          content={page.html}
-        />
-      </div>
-      <aside className="column is-3">
-        <RightNews posts={posts} />
-      </aside>
-    </div>
+    <section className="section">
+      <div className="container">
+          <div id="about" className='columns'>
+            <aside className="column is-2 menu menu-left">
+              <p className="menu-label">
+                <Link
+                  className={`menu-item ${page.frontmatter.path === '/about/' ? 'is-active' : ''}`}
+                  to='/about/'>About</Link>
+              </p>
+              <ul className="menu-list">
+                <li>
+                  <Link
+                    className={`menu-item ${page.frontmatter.path === '/about/mission/' ? 'is-active' : ''}`}
+                    to="/about/mission/">
+                    Mission
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={`menu-item ${page.frontmatter.path === '/about/team/' ? 'is-active' : ''}`}
+                    to="/about/staff/">
+                    Staff
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={`menu-item ${page.frontmatter.path === '/about/partners/' ? 'is-active' : ''}`}
+                    to="/about/partners/">
+                    Partners
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={`menu-item ${page.frontmatter.path === '/about/directions/' ? 'is-active' : ''}`}
+                    to="/about/directions/">
+                    Directions
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={`menu-item ${page.frontmatter.path === '/about/contact/' ? 'is-active' : ''}`}
+                    to="/about/contact/">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={`menu-item ${page.frontmatter.path === '/about/esg/' ? 'is-active' : ''}`}
+                    to="/about/esg/">
+                    About ESG
+                  </Link>
+                </li>
+              </ul>
+            </aside>
+            <div className="column is-7">
+              <AboutPageTemplate
+                contentComponent={HTMLContent}
+                title={page.frontmatter.title}
+                content={page.html}
+              />
+            </div>
+            <aside className="column is-3">
+              <RightNews posts={posts} />
+            </aside>
+          </div>
+        </div>
+      </section>
   )
 }
 

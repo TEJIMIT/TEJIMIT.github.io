@@ -25,7 +25,7 @@ ProjectPageTemplate.propTypes = {
 const ProjectPage = () => {
   return (
     <div>
-      <h1>Project Page</h1>
+      <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Projects</h2>
     </div>
   )
 }

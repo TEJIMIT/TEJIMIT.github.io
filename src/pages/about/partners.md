@@ -1,7 +1,7 @@
 ---
 templateKey: 'about-page'
 path: /about/partners/
-title: Our Partnering Organizations
+title: Partnering Organizations
 ---
 
 Partnerships
