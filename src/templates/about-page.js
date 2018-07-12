@@ -9,12 +9,12 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
+    <div>
       <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
         {title}
       </h2>
       <PageContent className="content" content={content} />
-    </section>
+    </div>
   )
 }
 
@@ -27,48 +27,42 @@ AboutPageTemplate.propTypes = {
 const AboutPage = ({ data }) => {
   const { page } = data
   const { edges: posts } = data.blogs
-  
+
   return (
-    <div className='container'>
-      <div className='columns'>
-        <aside className="column is-2 menu menu-left">
-            <section className="section">
-              <p className="menu-label">
-                <Link
-                  className={`menu-item ${page.frontmatter.path === '/about/' ? 'is-active' : ''}`}
-                  to='/about/'>About</Link>
-              </p>
-              <ul className="menu-list">
-                <li>
-                  <Link
-                    className={`menu-item ${page.frontmatter.path === '/about/mission/' ? 'is-active' : ''}`}
-                    to="/about/mission/">
-                    Mission
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className={`menu-item ${page.frontmatter.path === '/about/team/' ? 'is-active' : ''}`}
-                    to="/about/team/">
-                    Team
-                  </Link>
-                </li>
-              </ul>
-            </section>
-        </aside>
-        <div className="column is-7">
-          <AboutPageTemplate
-            contentComponent={HTMLContent}
-            title={page.frontmatter.title}
-            content={page.html}
-          />
-        </div>
-        <aside className="column is-3">
-          <section className="section">
-            <RightNews posts={posts} />
-          </section>
-        </aside>
+    <div id="about" className='columns'>
+      <aside className="column is-2 menu menu-left">
+        <p className="menu-label">
+          <Link
+            className={`menu-item ${page.frontmatter.path === '/about/' ? 'is-active' : ''}`}
+            to='/about/'>About</Link>
+        </p>
+        <ul className="menu-list">
+          <li>
+            <Link
+              className={`menu-item ${page.frontmatter.path === '/about/mission/' ? 'is-active' : ''}`}
+              to="/about/mission/">
+              Mission
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={`menu-item ${page.frontmatter.path === '/about/team/' ? 'is-active' : ''}`}
+              to="/about/team/">
+              Team
+            </Link>
+          </li>
+        </ul>
+      </aside>
+      <div className="column is-7">
+        <AboutPageTemplate
+          contentComponent={HTMLContent}
+          title={page.frontmatter.title}
+          content={page.html}
+        />
       </div>
+      <aside className="column is-3">
+        <RightNews posts={posts} />
+      </aside>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 ---
-templateKey: projects-page
+templateKey: project-page
+path: /projects/coders-beyond-bars/
 title: Coders Beyond Bars
 ---
 ![Coders Beyond Bars](/img/coders-beyond-bars.jpg)

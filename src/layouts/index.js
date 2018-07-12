@@ -12,7 +12,11 @@ const TemplateWrapper = ({ children }) => (
     <Helmet title="TEJI@MIT | The Educational Justice Institute" />
     <TopNavBar />
     <Navbar />
-    <div>{children()}</div>
+    <section className="section">
+      <div className="container">
+        {children()}
+      </div>
+    </section>
     <Footer />
   </div>
 )

@@ -3,9 +3,8 @@ import map from '../../img/mit_esg_map.png'
 
 const Contact = () => {
   return (
-    <section className="section">
-      <div className='container'>
-        <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Contact</h2>
+      <div id="contact">
+        <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Direction</h2>
         <div className='columns is-desktop contact'>
           <div className='column contact-map'>
             <img src={map} alt="Map" className="image"/>
@@ -31,8 +30,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
   );
 }
 
-export default Contact
+export default Contact;

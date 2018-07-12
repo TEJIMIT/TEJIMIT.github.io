@@ -1,11 +1,12 @@
 ---
 templateKey: about-page
+path: /about/staff/
 title: Team
 ---
 
 ![Lee Perlman](/img/lee_perlman.jpg)
 
-**Lee Perlman, PhD** 
+**Lee Perlman, PhD**
 _Co-Director_
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cum sociis natoque penatibus et magnis dis parturient montes. Nibh cras pulvinar mattis nunc sed blandit libero volutpat. Id leo in vitae turpis massa sed elementum tempus egestas. Varius quam quisque id diam vel quam elementum. Malesuada proin libero nunc consequat interdum varius sit amet. Tincidunt eget nullam non nisi est sit amet facilisis magna. Ullamcorper velit sed ullamcorper morbi tincidunt. Egestas diam in arcu cursus euismod quis viverra nibh cras. Quis hendrerit dolor magna eget est. Amet risus nullam eget felis eget nunc. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Amet cursus sit amet dictum sit amet justo donec enim. Ipsum faucibus vitae aliquet nec. Et malesuada fames ac turpis egestas. Urna duis convallis convallis tellus. Condimentum mattis pellentesque id nibh. Vel facilisis volutpat est velit. In nisl nisi scelerisque eu ultrices vitae auctor eu. Curabitur gravida arcu ac tortor dignissim convallis aenean et.
@@ -32,5 +33,3 @@ Faucibus pulvinar elementum integer enim neque volutpat. Maecenas ultricies mi e
 *Program Manager*
 
 In ante metus dictum at tempor commodo ullamcorper. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Arcu ac tortor dignissim convallis aenean et tortor at. Eu volutpat odio facilisis mauris sit amet massa. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Semper viverra nam libero justo laoreet sit amet cursus. Sed augue lacus viverra vitae congue eu. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Mauris ultrices eros in cursus turpis massa tincidunt dui. Libero enim sed faucibus turpis in eu mi. Nulla facilisi nullam vehicula ipsum a. Quis varius quam quisque id diam. Donec pretium vulputate sapien nec sagittis. In nisl nisi scelerisque eu ultrices vitae auctor.
-
-At augue eget arcu dictum varius. Sit amet facilisis magna etiam tempor orci. Risus feugiat in ante metus dictum at tempor commodo ullamcorper. Nisi vitae suscipit tellus mauris a. Ullamcorper sit amet risus nullam eget felis eget. Amet mattis vulputate enim nulla aliquet porttitor lacus. Congue quisque egestas diam in arcu cursus euismod quis viverra. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Adipiscing enim eu turpis egestas. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.

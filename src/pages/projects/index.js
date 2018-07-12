@@ -24,19 +24,15 @@ class Projects extends React.Component {
     const { edges: blogs } = data.blogs
 
     return (
-      <section className="section">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-three-quarters">
-              <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Our Projects</h2>
-              {this.renderProjects(projs)}
-            </div>
-            <div className="column">
-              <RightNews posts={blogs} />
-            </div>
-          </div>
+      <div id="projects" className="columns">
+        <div className="column is-three-quarters">
+          <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Our Projects</h2>
+          {this.renderProjects(projs)}
         </div>
-      </section>
+        <div className="column">
+          <RightNews posts={blogs} />
+        </div>
+      </div>
     )
   }
 }
@@ -56,7 +52,7 @@ export const pageQuery = graphql`
   query ProjectQuery {
     projects: allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___title]},
-        filter: { frontmatter: { templateKey: { eq: "projects-page" } } }
+        filter: { frontmatter: { templateKey: { eq: "project-page" } } }
       ) {
         edges {
           node {

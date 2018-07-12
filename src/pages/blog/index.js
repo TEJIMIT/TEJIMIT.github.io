@@ -32,21 +32,17 @@ class Blogs extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <section className="section">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-three-quarters">
-              <h3 className="title has-text-weight-bold is-size-3">
-                Blog Posts
-              </h3>
-              {this.renderPosts(posts)}
-            </div>
-            <div className="column">
-                Right Side
-            </div>
-          </div>
+      <div id="blog" className="columns">
+        <div className="column is-three-quarters">
+          <h3 className="title has-text-weight-bold is-size-3">
+            Blog Posts
+          </h3>
+          {this.renderPosts(posts)}
         </div>
-      </section>
+        <div className="column">
+            Right Side
+        </div>
+      </div>
     )
   }
 }

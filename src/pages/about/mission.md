@@ -1,5 +1,6 @@
 ---
 templateKey: about-page
+path: /about/mission/
 title: Mission
 ---
 **Providing  students with non-traditional learning and social justice opportunities while preparing incarcerated students for successful reentry through education and technology.**

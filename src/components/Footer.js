@@ -37,8 +37,9 @@ const Footer = () => (
             <li><Link to='/about/'>About</Link></li>
             <li><Link to='/projects/'>Projects</Link></li>
             <li><Link to='/news/'>News</Link></li>
-            <li><Link to='/blog/'>Blog</Link></li>
-            <li><Link to='/contact/'>Contact</Link></li>
+            <li><Link to='/events/'>Events</Link></li>
+            <li><Link to='/resources/'>Resources</Link></li>
+            <li><Link to='/getinvolved/'>Get Involved</Link></li>
           </ul>
         </div>
         <div className='column footer-social'>

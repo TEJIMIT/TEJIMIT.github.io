@@ -1,5 +1,6 @@
 ---
-templateKey: projects-page
+templateKey: project-page
+path: /projects/coders-beyond-bars/
 title: Philosophy of Love
 ---
 ![Philosophy of Love](/img/philosophy-of-love.jpg)
