@@ -10,14 +10,13 @@ class News extends React.Component {
       posts.map(({ node: post }) => (
           <div key={post.id} className="box">
               <Link className="has-text-primary" to={post.fields.slug}>
-                <h5 className="has-text-weight-bold is-size-5">
+                <h5 className="has-text-weight-bold is-size-5 news-post">
                   {post.frontmatter.title}
                 </h5>
               </Link>
-              <small>{post.frontmatter.date}</small>
+              <small className="text-muted">{post.frontmatter.date}</small>
             <p>
-              {post.excerpt}
-              <br />
+              {post.excerpt} &nbsp;
               <Link to={post.fields.slug}>
                 Read More →
               </Link>
@@ -37,12 +36,12 @@ class News extends React.Component {
           <div id="news" className="columns">
             <div className="column is-three-quarters">
               <h2 className="title has-text-weight-bold is-size-2">
-                News Posts
+                News
               </h2>
               {this.renderPosts(posts)}
             </div>
             <div className="column">
-                
+
             </div>
           </div>
         </div>

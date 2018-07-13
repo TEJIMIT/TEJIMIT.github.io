@@ -12,13 +12,13 @@ class RightNews extends React.Component {
           <div className="news-item" key={post.id} >
             <div>
               <Link to={post.fields.slug}>
-                <h6 className="has-text-primary is-size-6">{post.frontmatter.title}</h6>
+                <h5 className="has-text-weight-bold is-size-5 news-post">{post.frontmatter.title}</h5>
               </Link>
-              <small>{post.frontmatter.date}</small>
+              <small className="text-muted">{post.frontmatter.date}</small>
             </div>
             <p>
-              {post.excerpt}
-              <Link to={post.fields.slug}>Read More -></Link>
+              {post.excerpt}  &nbsp;
+              <Link to={post.fields.slug}>Read More →</Link>
             </p>
           </div>
         ))

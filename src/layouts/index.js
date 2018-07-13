@@ -24,8 +24,6 @@ const TemplateWrapper = ({ children }) => {
   )
 }
 
-
-
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }

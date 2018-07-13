@@ -28,7 +28,7 @@ class Projects extends React.Component {
         <div className="container">
           <div id="projects" className="columns">
             <div className="column is-three-quarters">
-              <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Our Projects</h2>
+              <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Projects</h2>
               {this.renderProjects(projs)}
             </div>
             <div className="column">

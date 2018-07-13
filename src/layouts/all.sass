@@ -8,6 +8,14 @@
 body
   color: $black
 
+  a
+    color: $mit-dark-gray
+    &:hover
+      color: $mit-red
+
+  .text-muted
+    color: $mit-dark-gray
+
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -48,6 +56,7 @@ body
   font-family: "Oswald", Arial, sans-serif
   color: $black
 
+@import "src/layouts/styles/header"
 @import "src/layouts/styles/topnav"
 @import "src/layouts/styles/navbar"
 @import "src/layouts/styles/leftMenu"

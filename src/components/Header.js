@@ -6,7 +6,7 @@ import header from '../img/header_background.jpg'
 
 const Header = () => (
   <div className="header">
-    <img src={header} />
+    {/* <img src={header} alt='MCI Norfolk Debate'/> */}
   </div>
 )
 
