@@ -6,21 +6,22 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: "news"
+    label: "News"
+    folder: "src/pages/news"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: "pages"
-    label: "Pages"
+  - name: "about"
+    label: "About"
+    folder: "src/pages/about"
     files:
       - file: "src/pages/about/index.md"
         label: "About"
@@ -36,13 +37,19 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/about/team.md"
-        label: "Team"
-        name: "team"
+      - file: "src/pages/about/staff.md"
+        label: "Staff"
+        name: "staff"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "projects"
+    label: "Projects"
+    folder: "src/pages/projects"
+    create: true
+    files:
       - file: "src/pages/projects/philosophy-of-love.md"
         label: "Philosophy of Love"
         name: "philosophy-of-love"
@@ -55,5 +62,17 @@ collections:
         name: "coders-beyond-bars"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "resources"
+    label: "Resources"
+    folder: "src/pages/resources"
+    files:
+      - file: "src/pages/resources/index.md"
+        label: "Resources"
+        name: "resources"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resources-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
