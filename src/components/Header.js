@@ -5,7 +5,7 @@ import header from '../img/header_background.jpg'
 
 
 const Header = () => (
-  <div class="header">
+  <div className="header">
     <img src={header} />
   </div>
 )

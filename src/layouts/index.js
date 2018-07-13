@@ -7,17 +7,24 @@ import TopNavBar from '../components/TopNavBar'
 import Footer from '../components/Footer'
 import './all.sass'
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet title="TEJI@MIT | The Educational Justice Institute" />
-    <TopNavBar />
-    <Navbar />
+
+const TemplateWrapper = ({ children }) => {
+  return (
     <div>
-      {children()}
+      <Helmet
+        htmlAttributes={{"lang": "en"}}
+        title="TEJI@MIT | The Educational Justice Institute" />
+      <TopNavBar />
+      <Navbar />
+      <div>
+        {children()}
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
-)
+  )
+}
+
+
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,

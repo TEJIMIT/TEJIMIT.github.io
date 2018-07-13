@@ -5,6 +5,9 @@
 @import "src/layouts/styles/variables"
 @import "src/layouts/styles/fonts"
 
+body
+  color: $black
+
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -41,7 +44,11 @@
   display: flex
   align-items: center
 
+.title
+  font-family: "Oswald", Arial, sans-serif
+  color: $black
 
+@import "src/layouts/styles/topnav"
 @import "src/layouts/styles/navbar"
 @import "src/layouts/styles/leftMenu"
 @import "src/layouts/styles/rightNews"

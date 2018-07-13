@@ -28,7 +28,7 @@ class RightNews extends React.Component {
   render() {
       return (
         <div className="box">
-          <h3 className="has-text-weight-bold is-size-3">
+          <h3 className="title has-text-weight-bold is-size-3">
             Latest News
           </h3>
           {this.renderPosts(this.props.posts)}
