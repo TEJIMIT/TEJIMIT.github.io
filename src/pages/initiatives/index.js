@@ -5,14 +5,23 @@ import Link from 'gatsby-link'
 import RightNews from '../../components/RightNews'
 
 
-class Projects extends React.Component {
+class Initiatives extends React.Component {
 
   renderProjects(projs) {
     return (
       projs.map(({ node: proj }) => (
-        <div key={proj.id} className="box">
-          <h4 className="has-text-weight-bold is-size-4">{proj.frontmatter.title}</h4>
-          <p>{proj.excerpt}</p>
+        <div key={proj.id} className="card">
+          <div className="card-image">
+            <figure className="image is-250x100">
+              <img src="https://fakeimg.pl/250x100/" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div className="card-content">
+            <h4 className="title has-text-weight-bold is-size-4">{proj.frontmatter.title}</h4>
+            <div className="content">
+              <p>{proj.excerpt}</p>
+            </div>
+          </div>
         </div>
       ))
     )
@@ -41,22 +50,22 @@ class Projects extends React.Component {
   }
 }
 
-Projects.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-}
+// Projects.propTypes = {
+//   data: PropTypes.shape({
+//     allMarkdownRemark: PropTypes.shape({
+//       edges: PropTypes.array,
+//     }),
+//   }),
+// }
 
 export default Projects
 
 
 export const pageQuery = graphql`
   query ProjectQuery {
-    projects: allMarkdownRemark(
+    initiatives: allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___title]},
-        filter: { frontmatter: { templateKey: { eq: "project-page" } } }
+        filter: { frontmatter: { templateKey: { eq: "initiative-page" } } }
       ) {
         edges {
           node {
@@ -71,7 +80,7 @@ export const pageQuery = graphql`
           }
         }
       }
-    blogs: allMarkdownRemark(
+    news: allMarkdownRemark(
         limit: 3,
         sort: { order: DESC, fields: [frontmatter___date] },
         filter: { frontmatter: { templateKey: { eq: "news-post" } }}
