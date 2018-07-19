@@ -10,7 +10,7 @@ const Events = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Events;
+export default Events

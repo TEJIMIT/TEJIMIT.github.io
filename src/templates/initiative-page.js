@@ -3,7 +3,7 @@ import Links from 'gatsby-link'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
-export const ProjectPageTemplate = ({ title, content, contentComponent }) => {
+export const InitiativePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -16,13 +16,13 @@ export const ProjectPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-ProjectPageTemplate.propTypes = {
+InitiativePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const ProjectPage = () => {
+const InitiativePage = () => {
   return (
     <div>
       <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Projects</h2>
@@ -30,4 +30,4 @@ const ProjectPage = () => {
   )
 }
 
-export default ProjectPage
+export default InitiativePage

@@ -6,3 +6,4 @@ import NewsPostPreview from './preview-templates/NewsPostPreview'
 CMS.registerPreviewStyle('/styles.css')
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('news', NewsPostPreview)
+// CMS.registerPreviewTemplate('')

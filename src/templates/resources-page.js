@@ -13,7 +13,7 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
           <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
             {title}
           </h2>
-          <PageContent className="content" content={content} />
+          {/* <PageContent className="content" content={content} /> */}
         </div>
       </div>
     </section>

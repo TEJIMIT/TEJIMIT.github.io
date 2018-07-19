@@ -29,8 +29,8 @@ class Initiatives extends React.Component {
 
   render() {
     const { data } = this.props
-    const { edges: projs } = data.projects
-    const { edges: blogs } = data.blogs
+    const { edges: inits } = data.initiatives
+    const { edges: news } = data.news
 
     return (
       <section className="section">
@@ -38,10 +38,10 @@ class Initiatives extends React.Component {
           <div id="projects" className="columns">
             <div className="column is-three-quarters">
               <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Projects</h2>
-              {this.renderProjects(projs)}
+              {this.renderProjects(inits)}
             </div>
             <div className="column">
-              <RightNews posts={blogs} />
+              <RightNews posts={news} />
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ class Initiatives extends React.Component {
 //   }),
 // }
 
-export default Projects
+export default Initiatives
 
 
 export const pageQuery = graphql`

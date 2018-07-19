@@ -53,6 +53,7 @@ NewsPostTemplate.propTypes = {
   helmet: PropTypes.instanceOf(Helmet),
 }
 
+
 const NewsPost = ({ data }) => {
   const { markdownRemark: post } = data
 
@@ -61,7 +62,7 @@ const NewsPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+      helmet={<Helmet title={`${post.frontmatter.title} | News`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />
@@ -75,6 +76,7 @@ NewsPost.propTypes = {
 }
 
 export default NewsPost
+
 
 export const pageQuery = graphql`
   query NewsPostByID($id: String!) {

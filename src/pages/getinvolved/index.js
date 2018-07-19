@@ -10,7 +10,7 @@ const GetInvoved = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default GetInvoved;
+export default GetInvoved

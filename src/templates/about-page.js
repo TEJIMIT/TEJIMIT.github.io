@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
 import RightNews from '../components/RightNews'
+import LeftMenu from '../components/LeftMenu'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -24,65 +25,48 @@ AboutPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
+
+
+export const LINKS = [
+    {
+      item: 'About Us',
+      url: '/about/'
+    },
+    {
+      item: 'Staff',
+      url: '/about/staff/'
+    },
+    {
+      item: 'Partners',
+      url: '/about/partners/'
+    },
+    {
+      item: 'Maps & Directions',
+      url: '/about/directions/'
+    },
+    {
+      item: 'Contact Us',
+      url: '/about/contact/'
+    },
+    {
+      item: 'About ESG',
+      url: '/about/esg/'
+    },
+]
+
+
+
 const AboutPage = ({ data }) => {
   const { page } = data
-  const { edges: posts } = data.blogs
+  const { edges: posts } = data.news
 
   return (
     <section className="section">
       <div className="container">
           <div id="about" className='columns'>
-            <aside className="column is-2 menu menu-left">
-              <p className="menu-label">
-                <Link
-                  className={`menu-item ${page.frontmatter.path === '/about/' ? 'is-active' : ''}`}
-                  to='/about/'>About</Link>
-              </p>
-              <ul className="menu-list">
-                <li>
-                  <Link
-                    className={`menu-item ${page.frontmatter.path === '/about/mission/' ? 'is-active' : ''}`}
-                    to="/about/mission/">
-                    Mission
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className={`menu-item ${page.frontmatter.path === '/about/team/' ? 'is-active' : ''}`}
-                    to="/about/staff/">
-                    Staff
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className={`menu-item ${page.frontmatter.path === '/about/partners/' ? 'is-active' : ''}`}
-                    to="/about/partners/">
-                    Partners
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className={`menu-item ${page.frontmatter.path === '/about/directions/' ? 'is-active' : ''}`}
-                    to="/about/directions/">
-                    Directions
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className={`menu-item ${page.frontmatter.path === '/about/contact/' ? 'is-active' : ''}`}
-                    to="/about/contact/">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className={`menu-item ${page.frontmatter.path === '/about/esg/' ? 'is-active' : ''}`}
-                    to="/about/esg/">
-                    About ESG
-                  </Link>
-                </li>
-              </ul>
-            </aside>
+            <div className="column is-2">
+              <LeftMenu title="about" links={LINKS} />
+            </div>
             <div className="column is-7">
               <AboutPageTemplate
                 contentComponent={HTMLContent}
@@ -90,20 +74,22 @@ const AboutPage = ({ data }) => {
                 content={page.html}
               />
             </div>
-            <aside className="column is-3">
+            <div className="column is-3">
               <RightNews posts={posts} />
-            </aside>
+            </div>
           </div>
         </div>
       </section>
   )
 }
 
-AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
-}
+// AboutPage.propTypes = {
+//   data: PropTypes.object.isRequired,
+// }
 
 export default AboutPage
+
+
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
@@ -114,7 +100,7 @@ export const aboutPageQuery = graphql`
         path
       }
     }
-    blogs: allMarkdownRemark(
+    news: allMarkdownRemark(
         limit: 3,
         sort: { order: DESC, fields: [frontmatter___date] },
         filter: { frontmatter: { templateKey: { eq: "news-post" } }}

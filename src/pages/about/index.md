@@ -4,6 +4,8 @@ path: /about/
 title: About Us
 ---
 
+**Providing  students with non-traditional learning and social justice opportunities while preparing incarcerated students for successful reentry through education and technology.**
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel eros donec ac odio tempor. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Quam nulla porttitor massa id neque. Turpis massa tincidunt dui ut ornare. Pharetra et ultrices neque ornare. Tempus quam pellentesque nec nam aliquam sem et tortor. Quam elementum pulvinar etiam non quam lacus suspendisse. Tortor pretium viverra suspendisse potenti nullam ac tortor. Turpis in eu mi bibendum neque egestas congue quisque.
 
 Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Placerat orci nulla pellentesque dignissim enim sit amet. Ac turpis egestas sed tempus urna et pharetra pharetra. Luctus venenatis lectus magna fringilla urna. Dolor sit amet consectetur adipiscing elit. Urna nunc id cursus metus aliquam eleifend mi in nulla. Pellentesque elit eget gravida cum sociis natoque penatibus et. Tristique sollicitudin nibh sit amet commodo. Id aliquet risus feugiat in ante. Sodales neque sodales ut etiam sit amet nisl. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Arcu odio ut sem nulla pharetra diam sit. Id volutpat lacus laoreet non curabitur gravida. Eget mauris pharetra et ultrices. Sit amet purus gravida quis blandit turpis cursus in. Volutpat est velit egestas dui. Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper.
