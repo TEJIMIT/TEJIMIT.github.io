@@ -63,13 +63,13 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
-  # - name: "resources"
-  #   label: "Resources"
-  #   files:
-  #     - file: "src/pages/resources/index.md"
-  #       label: "Resources"
-  #       name: "resources"
-  #       fields:
-  #         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resources-page"}
-  #         - {label: "Title", name: "title", widget: "string"}
-  #         - {label: "Body", name: "body", widget: "markdown"}
+  - name: "resources"
+    label: "Resources"
+    files:
+      - file: "src/pages/resources/index.md"
+        label: "Resources"
+        name: "resources"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resources-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
