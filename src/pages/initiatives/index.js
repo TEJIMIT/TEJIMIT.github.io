@@ -10,10 +10,10 @@ class Initiatives extends React.Component {
   renderProjects(projs) {
     return (
       projs.map(({ node: proj }) => (
-        <div key={proj.id} className="card">
+        <div key={proj.id} className="card initiative-card">
           <div className="card-image">
-            <figure className="image is-250x100">
-              <img src="https://fakeimg.pl/250x100/" alt="Placeholder image" />
+            <figure className="image is-120x120">
+              <img src="https://fakeimg.pl/120x120/" alt="Placeholder image" />
             </figure>
           </div>
           <div className="card-content">
@@ -37,7 +37,7 @@ class Initiatives extends React.Component {
         <div className="container">
           <div id="projects" className="columns">
             <div className="column is-three-quarters">
-              <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Projects</h2>
+              <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Initiatives</h2>
               {this.renderProjects(inits)}
             </div>
             <div className="column">

@@ -1,20 +1,11 @@
 import React from 'react';
 
-import LeftMenu from '../../components/LeftMenu'
-import RightNews from '../../components/RightNews'
-import { LINKS } from '../../templates/about-page'
-
 
 const Contact = (props) => {
-  const { edges: posts } = props.data.allMarkdownRemark
-
   return (
     <section className="section">
       <div className="container">
         <div id="about" className="columns">
-          <div className="column is-2">
-            <LeftMenu title="about" links={LINKS} />
-          </div>
           <div className="column is-7">
             <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>
               Contact Us
@@ -55,13 +46,10 @@ const Contact = (props) => {
               </div>
               <div class="field">
                 <div class="control">
-                  <button class="button is-link submit">Submit →</button>
+                  <button class="button is-link submit is-pulled-right">Submit</button>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="column is-3">
-            <RightNews posts={posts} />
           </div>
         </div>
       </div>
@@ -70,29 +58,3 @@ const Contact = (props) => {
 }
 
 export default Contact
-
-
-export const contactQuery = graphql`
-  query ContactQuery {
-    allMarkdownRemark(
-        limit: 3,
-        sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: { templateKey: { eq: "news-post" } }}
-      ) {
-        edges {
-          node {
-            excerpt(pruneLength: 100)
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              templateKey
-              date(formatString: "MMMM DD, YYYY")
-            }
-          }
-        }
-      }
-  }
-`

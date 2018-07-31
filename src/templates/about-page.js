@@ -45,10 +45,6 @@ export const LINKS = [
       url: '/about/directions/'
     },
     {
-      item: 'Contact Us',
-      url: '/about/contact/'
-    },
-    {
       item: 'About ESG',
       url: '/about/esg/'
     },

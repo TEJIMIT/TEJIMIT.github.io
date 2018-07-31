@@ -45,19 +45,16 @@ class Navbar extends React.Component {
                   About
                 </Link>
                 <Link className="navbar-item" to="/initiatives/">
-                  Projects
+                  Initiatives
                 </Link>
                 <Link className="navbar-item" to="/news/">
                   News
                 </Link>
-                <Link className="navbar-item" to="/events/">
-                  Events
-                </Link>
                 <Link className="navbar-item" to="/resources/">
                   Resources
                 </Link>
-                <Link className="navbar-item" to="/getinvolved/">
-                  Get Involved
+                <Link className="navbar-item" to="/contact/">
+                  Contact
                 </Link>
               </div>
             </div>

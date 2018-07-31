@@ -1,12 +1,21 @@
 import React from 'react'
+import axios from 'axios'
+import GoogleMapReact from 'google-map-react'
 
+import RightNews from '../../components/RightNews'
 import LeftMenu from '../../components/LeftMenu'
 import map from '../../img/mit_esg_map.png'
 import { LINKS } from '../../templates/about-page'
 
 
+const GOOGLE_MAPS_API = "AIzaSyB-F5W_7sKvTIuEg6NVGSCwPiD-K8VCz1E"
 
-const Directions = () => {
+
+
+
+const Directions = (props) => {
+  const { edges: posts } = props.data.allMarkdownRemark
+
   return (
     <section className="section">
       <div className="container">
@@ -39,12 +48,27 @@ const Directions = () => {
                 </div>
               </div>
               <div className='contact-map'>
-                <img src={map} alt="Map" className="image"/>
+                <GoogleMapReact
+                    bootstrapURLKeys={{ key: GOOGLE_MAPS_API }}
+                    defaultCenter={{
+                      lat: 42.360571,
+                      lng: -71.0922101
+                    }}
+                    defaultZoom={16}
+                  >
+                    <div
+                      className="map-marker"
+                      lat={42.3609}
+                      lng={-71.09185}
+                    >
+                      <p>TEJI</p>
+                    </div>
+                  </GoogleMapReact>
               </div>
             </div>
           </div>
           <div className="column is-3">
-            <p>Right Menu</p>
+            <RightNews posts={posts} />
           </div>
         </div>
       </div>
@@ -53,3 +77,31 @@ const Directions = () => {
 }
 
 export default Directions
+
+
+
+
+export const contactQuery = graphql`
+  query DirectionQuery {
+    allMarkdownRemark(
+        limit: 3,
+        sort: { order: DESC, fields: [frontmatter___date] },
+        filter: { frontmatter: { templateKey: { eq: "news-post" } }}
+      ) {
+        edges {
+          node {
+            excerpt(pruneLength: 100)
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              templateKey
+              date(formatString: "MMMM DD, YYYY")
+            }
+          }
+        }
+      }
+  }
+`
