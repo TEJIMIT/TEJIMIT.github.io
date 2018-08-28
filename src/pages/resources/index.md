@@ -80,20 +80,115 @@ title: Resources
 
 ### Race/Ethnicity, Gender, LGBTQ, Disability, Socioeconomics
 
+* [Every Day Assumptions](https://www.nytimes.com/2014/09/08/opinion/charles-blow-crime-bias-and-statistics.html)
+
+* [Poverty, Societal Exclusion, and Violence](http://www.umich.edu/~psycours/561/kramer.htm)
+
+* [Societal Exclusion, Race, and Gender](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3890356/)
+
+* [Crime and Immigration](https://www.americanimmigrationcouncil.org/research/criminalization-immigration-united-states)
+
+* [Racial Disparity](http://www.sentencingproject.org/publications/color-of-justice-racial-and-ethnic-disparity-in-state-prisons/)
+
+* [Racial Incarceration Statistic Overview] (http://www.naacp.org/criminal-justice-fact-sheet/)
+
+* [“Black-on-Black” crime](http://www.politifact.com/florida/article/2015/may/21/updated-look-statistics-black-black-murders/)
+
+* [Women and Incarceration](https://www.prisonpolicy.org/reports/pie2017women.html)
+
+* [Pregnancy and Motherhood](https://www.nwlc.org/sites/default/files/pdfs/mothersbehindbars2010.pdf)
+
+* [LGBTQ General Statistics](https://williamsinstitute.law.ucla.edu/williams-in-the-news/incarceration-rate-of-lesbian-gay-bisexual-people-three-times-the-general-population/)
+
+* [LGBTQ Treatment During Incarceration](https://transequality.org/issues/resources/standing-lgbt-prisoners-advocate-s-guide-ending-abuse-and-combating-imprisonment)
+
+* [LGBTQ Social Contributions to Incarceration](https://www.vox.com/2016/2/23/11095980/lgbtq-gay-transgender-prison)
+
+* [Disability and Incarceration Overview](https://www.aclu.org/blog/prisoners-rights/solitary-confinement/prisoners-physical-disabilities-are-forgotten-and)
+
+* [Disability Statistics](https://www.bjs.gov/index.cfm?ty=pbdetail&iid=5500)
+
+* [Treatment of the Disabled](https://www.thenation.com/article/invisible-punishment-prisoners-disabilities/)
+
+
 ### Private vs Public Prisons
+
+* TED Talk: Bryan Stevenson - We Need to Talk About Injustice 
+
+* TED Talk: Dan Pacholke - How Prisons can Help Inmates Lead Meaningful Lives 
+
+
 
 
 ### Policies and Laws
 
+* 70 Million Podcast 
+
+* [Role of Prison](https://inmateblogger.com/2018/05/20/prison-as-punishment-is-it-enough-by-stephen-newman/)
+
+* [Mandatory Sentencing](https://www.cjpf.org/mandatory-minimums/)
+
+* Three Strikes Laws
+
+* [War on Drugs](https://today.law.harvard.edu/feature/war-drugs-succeeding/)
+
+* [Voting](https://www.politifact.com/truth-o-meter/article/2018/apr/25/understanding-felon-voting-rights-restoration/)
+
+* [Voting Policies/Laws by State](http://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx)
+
 
 ### Recommended Readings and Media
+
+* [Sarah Garland, Gangs in Garden City: How Immigration, Segregation, and Youth Violence are Changing America's Suburbs](https://www.amazon.com/Gangs-Garden-City-Immigration-Segregation/dp/1568586159)
+
+* [Luis Rodriguez, Always Running and It Calls You Back ](https://www.amazon.com/Calls-You-Back-Addiction-Revolutions/dp/141658417X/ref=sr_1_1?s=books&ie=UTF8&qid=1534184661&sr=1-1&keywords=Luis+Rodriguez%2C+Always+Running+and+It+Calls+You+Back)
+
+* [Nic Sheff, Tweak](https://www.amazon.com/Tweak-Growing-Methamphetamines-Nic-Sheff/dp/1416972196/ref=sr_1_1?s=books&ie=UTF8&qid=1534184679&sr=1-1&keywords=Nic+Sheff%2C+Tweak)
+
+* [Stephen Newman, “Topping Out: Why Some Choose Prison Not Parole”](https://inmateblogger.com/2018/05/18/topping-out-why-some-choose-prison-not-parole-by-stephen-newman/)
+
+* [Bryan Stevenson, Just Mercy: A Story of Justice and Redemption](https://www.amazon.com/Just-Mercy-Story-Justice-Redemption/dp/081298496X/ref=sr_1_1?s=books&ie=UTF8&qid=1534184702&sr=1-1&keywords=Just+Mercy%2C+Bryan+Stevenson&smid=ATVPDKIKX0DER)
+
 
 
 ### Federal Corrections Links
 
+* [Federal Bureau of Prisons](https://www.bop.gov/)
+
+* [National Criminal Justice Reference Service] (https://www.ncjrs.gov/App/Topics/Topic.aspx?TopicID=1)
+
+* [National Law Enforcement and Corrections Technology Center](https://www.justnet.org/)
+
+* [National Institute of Corrections](https://nicic.gov/)
+
+* [US Department of Education, Office for Correctional Education](https://www2.ed.gov/offices/OVAE/AdultEd/OCE/index.html)
+
+* [US Department of Justice](https://www.justice.gov/)
+
 
 
 ### Massachusetts Corrections Links
+
+* [Official Website of the Commonwealth of MA] (https://www.mass.gov/?pageID=eopsagencylanding&L=3&L0=Home&L1=Public+Safety+Agencies&L2=Massachusetts+Department+of+Correction&sid=Eeops)
+
+* [MA Court System](https://www.mass.gov/orgs/massachusetts-court-system)
+
+* [MA Department of Correction](http://www.mass.gov/courts/)
+
+* [MA Department of Criminal Justice Information Services](https://www.mass.gov/orgs/department-of-criminal-justice-information-services)
+
+* [MA Executive Office of Public Safety](https://www.mass.gov/orgs/department-of-criminal-justice-information-services)
+
+* [MA Office for Victim Assistance](https://www.mass.gov/orgs/massachusetts-office-for-victim-assistance)
+
+* [MA Office of Community Corrections] (https://www.mass.gov/orgs/massachusetts-court-system)
+
+* [MA Office of Probation](https://www.mass.gov/orgs/massachusetts-court-system)
+
+* [MA Parole Board](https://www.mass.gov/orgs/massachusetts-parole-board)
+
+
+
 
 
 ### Additional Local Links
