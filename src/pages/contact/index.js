@@ -10,13 +10,14 @@ const Contact = (props) => {
             <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>
               Contact Us
             </h2>
-            <div className="contact-form">
+            <form className="contact-form" name="contact" method="POST" netlify>
               <div className="field">
                 <label className="label">Name</label>
                 <div className="control">
                   <input
                     className="input"
                     type="text"
+                    name="name"
                     placeholder="Your Name" />
                 </div>
               </div>
@@ -26,6 +27,7 @@ const Contact = (props) => {
                   <input
                     className="input"
                     type="email"
+                    name="email"
                     placeholder="your@email.com" />
                 </div>
               </div>
@@ -35,21 +37,22 @@ const Contact = (props) => {
                   <input
                     className="input"
                     type="text"
+                    name="subject"
                     placeholder="Subject" />
                 </div>
               </div>
               <div class="field">
                 <label class="label">Message</label>
                 <div class="control">
-                  <textarea class="textarea" placeholder="Your Message"></textarea>
+                  <textarea name="message" class="textarea" placeholder="Your Message"></textarea>
                 </div>
               </div>
               <div class="field">
                 <div class="control">
-                  <button class="button is-link submit is-pulled-right">Submit</button>
+                  <button class="button is-link submit is-pulled-right" type="submit">Submit</button>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
