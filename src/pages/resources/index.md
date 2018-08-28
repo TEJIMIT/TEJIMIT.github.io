@@ -2,22 +2,43 @@
 templateKey: resources-page
 title: Resources
 ---
+### History of Corrections in the United States
 
 
-## Readings and Media
+### Education and Juvenile System
 
-* [Description of At-Risk Youth](http://www.nccp.org/publications/pub_1073.html)
-* [Sexual Exploitation FAQs](https://www2.ed.gov/about/offices/list/oese/oshs/factsheet.html)
-* [Sexual Exploitation General Info](http://humantrafficking.unc.edu/frequently-asked-questions/)
-* [School-to-Prison Pipeline Overview](http://www.pbs.org/wnet/tavissmiley/tsr/education-under-arrest/school-to-prison-pipeline-fact-sheet/)
-* [Overview of MA Juvenile Programs and Supports](http://www.mass.gov/eohhs/gov/commissions-and-initiatives/cyf/)
-* [Juvenile Justice Population Overview](https://www.publiccounsel.net/ya/wp-content/uploads/sites/6/2014/08/detention-fact-sheet.pdf)
-* [Impact of Juvenile Incarceration](http://www.justicepolicy.org/images/upload/06-11_rep_dangersofdetention_jj.pdf)
-* [Cost of Juvenile Incarceration](http://voxeu.org/article/what-long-term-impact-incarcerating-juveniles)
-* [Massachusetts Department of Youth Services (DYS) interventions](http://www.mass.gov/eohhs/gov/departments/dys/department-of-youth-services-programs-and-services.html)
-* [DYS Clinical Interventions](http://www.doe.mass.edu/sped/advisories/clinical_services.pdf)
-* [Special Education and Literacy for Adjudicated Youth](http://www.edjj.org/focus/education/)
-* [Incarcerated Adult Education Overview](https://www.bjs.gov/content/pub/pdf/ecp.pdf)
-* [PIAAC Prison Study PowerPoint](http://www.air.org/event/piaac-prison-study-overview-skills-u-s-incarcerated-adults)
-* [Prison Education Impact of Recidivism](https://www.rand.org/news/press/2013/08/22.html)
-* [Prison Teaching Experience](https://www.huffingtonpost.com/allison-alter/interacting-with-the-inca_b_9577754.html)
+
+### Substance Use/Abuse, Mental Health, Trauma, Healthcare, End of Life/Aging
+
+### Financial Costs and Budgetary Concerns
+
+
+### Race/Ethnicity, Gender, LGBTQ, Disability, Socioeconomics
+
+### Private vs Public Prisons
+
+
+### Policies and Laws
+
+
+### Recommended Readings and Media
+
+
+### Federal Corrections Links
+
+
+
+### Massachusetts Corrections Links
+
+
+### Additional Local Links
+
+
+### Public Safety Links
+
+* [FOR PARENTS: Sesame Street Incarceration Tool Kit](http://www.sesamestreet.org/parents/topicsandactivities/toolkits/incarceration)
+* [Learn About Prisoner Reentry](http://www.reentry.gov/)
+* [National Domestic Violence Project](http://www.facetofacesurgery.org/domestic/index.html)
+* [National Major Gang Task Force](http://nagia-org.staging.365advantage.com/MemberAssociations/NationalMajorGangTaskForce/tabid/66/Default.aspx)
+* [Publications on Inmate Rehabilitation & Reentry](http://www.reentry.gov/publications/welcome.html)
+* [The American Probation and Parole Association](http://www.appa-net.org/eweb/)
