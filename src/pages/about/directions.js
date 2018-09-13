@@ -1,13 +1,10 @@
-import React from 'react'
-import axios from 'axios'
-import GoogleMapReact from 'google-map-react'
+import React from 'react';
+import axios from 'axios';
+import GoogleMapReact from 'google-map-react';
 
-import RightNews from '../../components/RightNews'
-import LeftMenu from '../../components/LeftMenu'
-import { LINKS } from '../../templates/about-page'
+import AboutMenu from '../../components/AboutMenu';
 
-
-const GOOGLE_MAPS_API = "AIzaSyB-F5W_7sKvTIuEg6NVGSCwPiD-K8VCz1E"
+const GOOGLE_MAPS_API = "AIzaSyB-F5W_7sKvTIuEg6NVGSCwPiD-K8VCz1E";
 
 
 const Directions = (props) => {
@@ -16,7 +13,7 @@ const Directions = (props) => {
       <div className="container">
         <div id="about" className="columns">
           <div className="column is-2">
-            <LeftMenu title="about" links={LINKS} />
+            <AboutMenu />
           </div>
           <div className="column is-7">
             <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>
@@ -65,7 +62,7 @@ const Directions = (props) => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Directions
+export default Directions;

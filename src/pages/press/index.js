@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 
-class News extends React.Component {
+class Press extends React.Component {
 
   renderPosts(posts) {
     return (
@@ -50,25 +50,26 @@ class News extends React.Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-News.propTypes = {
+Press.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
     }),
   }),
 }
-export default News
+
+export default Press;
 
 
 export const pageQuery = graphql`
-  query NewsQuery {
+  query PressQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "news-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "press-post" } }}
     ) {
       edges {
         node {

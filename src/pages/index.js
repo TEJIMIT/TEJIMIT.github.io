@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 import Header from '../components/Header'
-import RightNews from '../components/RightNews'
 
 
 export default class IndexPage extends React.Component {
@@ -60,7 +59,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 3,
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "news-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "press-post" } }}
     ) {
       edges {
         node {

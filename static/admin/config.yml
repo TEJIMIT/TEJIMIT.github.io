@@ -6,43 +6,18 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "news"
-    label: "News"
-    folder: "src/pages/news"
+  - name: "press"
+    label: "Press"
+    folder: "src/pages/press"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "press-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
-  - name: "about"
-    label: "About"
-    files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/about/mission.md"
-        label: "Mission"
-        name: "mission"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/about/staff.md"
-        label: "Staff"
-        name: "staff"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "initiative"
     label: "Initiatives"

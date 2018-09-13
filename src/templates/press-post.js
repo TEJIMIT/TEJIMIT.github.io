@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 
-export const NewsPostTemplate = ({
+export const PressPostTemplate = ({
   content,
   contentComponent,
   description,
@@ -45,7 +45,7 @@ export const NewsPostTemplate = ({
   )
 }
 
-NewsPostTemplate.propTypes = {
+PressPostTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -54,32 +54,32 @@ NewsPostTemplate.propTypes = {
 }
 
 
-const NewsPost = ({ data }) => {
+const PressPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <NewsPostTemplate
+    <PressPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | News`} />}
+      helmet={<Helmet title={`${post.frontmatter.title} | Press and Media`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />
   )
 }
 
-NewsPost.propTypes = {
+PressPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default NewsPost
+export default PressPost;
 
 
 export const pageQuery = graphql`
-  query NewsPostByID($id: String!) {
+  query PressPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
