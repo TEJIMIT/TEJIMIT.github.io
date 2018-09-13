@@ -16,15 +16,29 @@ export default class IndexPage extends React.Component {
         <Header />
         <section className="section">
           <div className="container">
-              <div className="columns is-desktop">
-                <div className="column">
-                  <h3 className="title has-text-weight-bold is-size-3">
-                    Home Page
-                  </h3>
-                </div>
-                <div className="column is-one-quarter-desktop">
-                  <RightNews posts={posts} />
-                </div>
+              <div>
+                About Us
+              </div>
+          </div>
+        </section>
+        <section className="section">
+          <div className="container">
+              <div>
+                What We Do
+              </div>
+          </div>
+        </section>
+        <section className="section">
+          <div className="container">
+              <div>
+                News and Media
+              </div>
+          </div>
+        </section>
+        <section className="section">
+          <div className="container">
+              <div>
+                Partnerships
               </div>
           </div>
         </section>

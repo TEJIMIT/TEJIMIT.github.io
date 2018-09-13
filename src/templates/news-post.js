@@ -40,8 +40,8 @@ export const NewsPostTemplate = ({
             ) : null}
           </div>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
   )
 }
 

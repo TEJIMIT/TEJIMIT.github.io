@@ -9,18 +9,25 @@ class News extends React.Component {
     return (
       posts.map(({ node: post }) => (
           <div key={post.id} className="box">
-              <Link className="has-text-primary" to={post.fields.slug}>
-                <h5 className="has-text-weight-bold is-size-5 news-post">
-                  {post.frontmatter.title}
-                </h5>
-              </Link>
-              <small className="text-muted">{post.frontmatter.date}</small>
-            <p>
-              {post.excerpt} &nbsp;
-              <Link to={post.fields.slug}>
-                Read More →
-              </Link>
-            </p>
+            <div className="columns">
+              <div className="column is-one-fifth">
+                Image
+              </div>
+              <div className="column is-fourth-fifths">
+                <Link className="has-text-primary" to={post.fields.slug}>
+                  <h5 className="has-text-weight-bold is-size-5 news-post">
+                    {post.frontmatter.title}
+                  </h5>
+                </Link>
+                <small className="text-muted">{post.frontmatter.date}</small>
+              <p>
+                {post.excerpt} &nbsp;
+                <Link to={post.fields.slug}>
+                  Read More →
+                </Link>
+              </p>
+              </div>
+            </div>
           </div>
         ))
     )
@@ -34,14 +41,11 @@ class News extends React.Component {
       <section className="section">
         <div className="container">
           <div id="news" className="columns">
-            <div className="column is-three-quarters">
+            <div className="column">
               <h2 className="title has-text-weight-bold is-size-2">
-                News
+                Press and Media
               </h2>
               {this.renderPosts(posts)}
-            </div>
-            <div className="column">
-
             </div>
           </div>
         </div>

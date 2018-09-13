@@ -43,18 +43,13 @@ export const LINKS = [
     {
       item: 'Maps & Directions',
       url: '/about/directions/'
-    },
-    {
-      item: 'About ESG',
-      url: '/about/esg/'
-    },
+    }
 ]
 
 
 
 const AboutPage = ({ data }) => {
   const { page } = data
-  const { edges: posts } = data.news
 
   return (
     <section className="section">
@@ -70,19 +65,11 @@ const AboutPage = ({ data }) => {
                 content={page.html}
               />
             </div>
-            <div className="column is-3">
-              <RightNews posts={posts} />
-            </div>
           </div>
         </div>
       </section>
   )
 }
-
-// AboutPage.propTypes = {
-//   data: PropTypes.object.isRequired,
-// }
-
 export default AboutPage
 
 
@@ -95,26 +82,6 @@ export const aboutPageQuery = graphql`
         title
         path
       }
-    }
-    news: allMarkdownRemark(
-        limit: 3,
-        sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: { templateKey: { eq: "news-post" } }}
-      ) {
-        edges {
-          node {
-            excerpt(pruneLength: 100)
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              templateKey
-              date(formatString: "MMMM DD, YYYY")
-            }
-          }
-        }
     }
   }
 `

@@ -4,18 +4,13 @@ import GoogleMapReact from 'google-map-react'
 
 import RightNews from '../../components/RightNews'
 import LeftMenu from '../../components/LeftMenu'
-import map from '../../img/mit_esg_map.png'
 import { LINKS } from '../../templates/about-page'
 
 
 const GOOGLE_MAPS_API = "AIzaSyB-F5W_7sKvTIuEg6NVGSCwPiD-K8VCz1E"
 
 
-
-
 const Directions = (props) => {
-  const { edges: posts } = props.data.allMarkdownRemark
-
   return (
     <section className="section">
       <div className="container">
@@ -67,9 +62,6 @@ const Directions = (props) => {
               </div>
             </div>
           </div>
-          <div className="column is-3">
-            <RightNews posts={posts} />
-          </div>
         </div>
       </div>
     </section>
@@ -77,31 +69,3 @@ const Directions = (props) => {
 }
 
 export default Directions
-
-
-
-
-export const contactQuery = graphql`
-  query DirectionQuery {
-    allMarkdownRemark(
-        limit: 3,
-        sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: { templateKey: { eq: "news-post" } }}
-      ) {
-        edges {
-          node {
-            excerpt(pruneLength: 100)
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              templateKey
-              date(formatString: "MMMM DD, YYYY")
-            }
-          }
-        }
-      }
-  }
-`

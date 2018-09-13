@@ -17,10 +17,10 @@ class Initiatives extends React.Component {
             </figure>
           </div>
           <div className="card-content">
-            <h4 className="title has-text-weight-bold is-size-4">{proj.frontmatter.title}</h4>
-            <div className="content">
+            <h4 className="title has-text-weight-bold is-size-4 is-centered">{proj.frontmatter.title}</h4>
+            {/* <div className="content">
               <p>{proj.excerpt}</p>
-            </div>
+            </div> */}
           </div>
         </div>
       ))
@@ -30,18 +30,16 @@ class Initiatives extends React.Component {
   render() {
     const { data } = this.props
     const { edges: inits } = data.initiatives
-    const { edges: news } = data.news
 
     return (
       <section className="section">
         <div className="container">
           <div id="projects" className="columns">
-            <div className="column is-three-quarters">
-              <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Initiatives</h2>
-              {this.renderProjects(inits)}
-            </div>
             <div className="column">
-              <RightNews posts={news} />
+              <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Initiatives</h2>
+              <div>
+                {this.renderProjects(inits)}
+              </div>
             </div>
           </div>
         </div>
@@ -49,14 +47,6 @@ class Initiatives extends React.Component {
     )
   }
 }
-
-// Projects.propTypes = {
-//   data: PropTypes.shape({
-//     allMarkdownRemark: PropTypes.shape({
-//       edges: PropTypes.array,
-//     }),
-//   }),
-// }
 
 export default Initiatives
 
@@ -76,26 +66,6 @@ export const pageQuery = graphql`
             }
             frontmatter {
               title
-            }
-          }
-        }
-      }
-    news: allMarkdownRemark(
-        limit: 3,
-        sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: { templateKey: { eq: "news-post" } }}
-      ) {
-        edges {
-          node {
-            excerpt(pruneLength: 100)
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              templateKey
-              date(formatString: "MMMM DD, YYYY")
             }
           }
         }
