@@ -20,7 +20,6 @@ collections:
       - {label: "Publication", name: "publication", widget: "string"}
       - {label: "URL", name: "url", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "initiative"
     label: "Initiatives"

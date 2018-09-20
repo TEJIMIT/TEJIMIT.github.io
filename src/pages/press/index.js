@@ -8,24 +8,48 @@ class Press extends React.Component {
   renderPosts(posts) {
     return (
       posts.map(({ node: post }) => (
-          <div key={post.id} className="box">
+          <div key={post.id}>
             <div className="columns">
               <div className="column is-one-fifth">
-                Image
+                <a
+                  href={post.frontmatter.url}
+                  target="_blank"
+                >
+                  <img
+                    src={post.frontmatter.thumbnail}
+                    alt="Thumbnail"
+                  />
+                </a>
               </div>
               <div className="column is-fourth-fifths">
-                <Link className="has-text-primary" to={post.fields.slug}>
-                  <h5 className="has-text-weight-bold is-size-5 news-post">
+                <a
+                  className="has-text-primary" href={post.frontmatter.url}
+                  target="_blank"
+                >
+                  <h5 className="has-text-weight-bold is-size-3 news-post" >
                     {post.frontmatter.title}
                   </h5>
-                </Link>
+                </a>
+                <h6
+                  className="has-text-weight-bold is-size-4"
+                >
+                  {post.frontmatter.publication}
+                </h6>
                 <small className="text-muted">{post.frontmatter.date}</small>
-              <p>
-                {post.excerpt} &nbsp;
-                <Link to={post.fields.slug}>
-                  Read More →
-                </Link>
-              </p>
+                <h6
+                  className="has-text-weight-bold is-size-6"
+                >
+                  {post.frontmatter.description}
+                </h6>
+                <br />
+                <p>
+                  {post.excerpt} &nbsp;
+                  <a
+                    href={post.frontmatter.url}
+                    target="_blank">
+                    Read More →
+                  </a>
+                </p>
               </div>
             </div>
           </div>
@@ -82,6 +106,10 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            description
+            thumbnail
+            publication
+            url
           }
         }
       }
