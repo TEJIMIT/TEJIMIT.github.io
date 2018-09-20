@@ -8,7 +8,7 @@ class Press extends React.Component {
   renderPosts(posts) {
     return (
       posts.map(({ node: post }) => (
-          <div key={post.id}>
+          <div key={post.id} className="press-post-item">
             <div className="columns">
               <div className="column is-one-fifth">
                 <a
@@ -52,6 +52,7 @@ class Press extends React.Component {
                 </p>
               </div>
             </div>
+            <hr />
           </div>
         ))
     )
