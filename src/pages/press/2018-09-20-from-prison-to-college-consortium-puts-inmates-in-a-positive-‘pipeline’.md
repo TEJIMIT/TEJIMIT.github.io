@@ -2,7 +2,7 @@
 templateKey: press-post
 title: 'From prison to college: Consortium puts inmates in a positive ‘pipeline’'
 date: '2018-09-15'
-description: meh
+description: ''
 thumbnail: /img/boston_globe.jpg
 publication: Boston Globe
 url: >-
