@@ -2,6 +2,7 @@ import React from 'react';
 
 import AboutMenu from '../../components/AboutMenu';
 
+
 const AboutUs = () => {
   return (
     <section className="section">
