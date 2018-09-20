@@ -22,7 +22,6 @@ const PARTNER_INFO = {
 };
 
 
-
 const Partners = () => {
   return (
     <section className="section">
