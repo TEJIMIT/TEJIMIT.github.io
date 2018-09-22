@@ -35,33 +35,7 @@ const Partners = () => {
               Partners
             </h2>
             <section className="section">
-              <h4 className="title is-size-5">
-                Massachusetts Prison Education Consortium
-              </h4>
-            </section>
-
-            <section className="section">
-              <h4 className="title is-size-5">
-                Correctional Institutions
-              </h4>
-            </section>
-
-            <section className="section">
-              <h4 className="title is-size-5">
-                Non-profit Organizations
-              </h4>
-            </section>
-
-            <section className="section">
-              <h4 className="title is-size-5">
-                Technology Partners
-              </h4>
-            </section>
-
-            <section className="section">
-              <h4 className="title is-size-5">
-                Research Partners
-              </h4>
+              
             </section>
 
           </div>

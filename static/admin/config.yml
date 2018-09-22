@@ -23,22 +23,15 @@ collections:
 
   - name: "initiative"
     label: "Initiatives"
+    folder: "src/pages/initiatives"
     create: true
-    files:
-      - file: "src/pages/initiatives/philosophy-of-love.md"
-        label: "Philosophy of Love"
-        name: "philosophy-of-love"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "initiative-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/initiatives/coders-beyond-bars.md"
-        label: "Coders Beyond Bars"
-        name: "coders-beyond-bars"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "initiative-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "initiative-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+
 
   - name: "resources"
     label: "Resources"

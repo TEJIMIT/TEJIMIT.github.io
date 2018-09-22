@@ -13,7 +13,7 @@ const AboutMenu = () => {
           <Link
             className='menu-item'
             to='/about/'>
-            About
+            About Us
           </Link>
         </li>
         <li key='history'>

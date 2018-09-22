@@ -1,0 +1,21 @@
+.initiative-list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.initiative-item
+  padding: 10px
+  width: 100%
+  .title
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-shadow: 2px 2px $mit-dark-gray
+
+@media screen and (min-width: $tablet)
+  .initiative-item
+    width: 50%
+
+@media screen and (min-width: $desktop)
+  .initiative-item
+    width: 25%
