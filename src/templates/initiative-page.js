@@ -25,7 +25,7 @@ InitiativePageTemplate.propTypes = {
 const InitiativePage = () => {
   return (
     <div>
-      <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Projects</h2>
+      <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>Projects</h2>
     </div>
   )
 }

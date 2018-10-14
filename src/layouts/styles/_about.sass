@@ -1,0 +1,46 @@
+@import "src/layouts/styles/variables"
+
+.accomplishments
+  li
+    margin: 10px 0
+  span.icon
+    margin-right: 5px
+
+    & .fa-check-circle
+      color: $mit-dark-gray
+
+
+.profile-image
+  align-self: flex-start
+  width: 256px
+  height: 256px
+  @at-root .column
+    display: flex
+    flex-direction: column
+
+@media only screen and (min-width: 768px)
+  .profile-image
+    align-self: flex-end
+    width: 100%
+    height: 100%
+
+
+.profile-info
+  display: flex
+  align-items: flex-end
+  margin-bottom: 10px
+  h4.title
+    margin-bottom: 0
+    margin-right: 8px
+  h6.subtitle
+    font-style: italic
+    margin-left: 8px
+
+.profile-contact
+  display: flex
+  margin-bottom: 25px
+
+  a
+    color: $mit-dark-gray
+    &:hover
+      color: $mit-red

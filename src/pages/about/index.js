@@ -1,9 +1,12 @@
 import React from 'react';
+import Img from "gatsby-image";
 
 import AboutMenu from '../../components/AboutMenu';
 
 
-const AboutUs = () => {
+const AboutUs = ({ data }) => {
+  const { sizes } = data.img.childImageSharp;
+
   return (
     <section className="section">
       <div className="container">
@@ -11,38 +14,66 @@ const AboutUs = () => {
           <div className="column is-2">
             <AboutMenu />
           </div>
-          <div className="column is-7">
-            <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>
+          <div className="column is-10">
+            <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>
               About Us
             </h2>
-
+            <Img sizes={sizes} />
+            <br />
             <p>
-              The Educational Justice Institute @ MIT brings together two worlds: the world of academia with MIT's undergraduate and graduate students, faculty and staff, and the world of corrections through incarcerated populations and staff in Massachusetts correctional facilities.  Overseeing the program are two Co-directors whose experience spans both worlds.  Carole Cafferty is a 30 year veteran of Massachusetts corrections, a former superintendent of a Massachusetts Correctional facility, and an adjunct professor in criminal justice at UMass/Lowell.  Lee Perlman has taught philosophy and political philosophy at MIT, Harvard, Swarthmore and Brown for 34 years, and has been bringing classes into Massachusetts prisons since the 1980’s, and teaching credit bearing university courses in prison for 6 years.
+              The Educational Justice Institute (TEJI) is an innovative and groundbreaking initiative that provides a transformative learning experience for incarcerated individuals and university students.  Founded in 2017, TEJI is growing exponentially by developing co-learning opportunities for students both behind and outside of prison walls.
             </p>
 
-            Mission:
-            To support the academic and personal development of MIT students and individuals that have been effected by the United States criminal justice system by incubating unconventional technical solutions that impact
-
-            Vision:
-            The Education Justice Institute @ MIT will serve as an extension of MIT dedicated to the development of students and criminal justice reform. In addition, the corrections research will help solidify best practices in criminal justice education.
-
-            TEJI Objectives:
-              -  Create diverse educational ecosystems where traditional and non-traditional students can share there experiences and grow.
-              -  Serve as a resource for best practices in corrections education, criminal justice reform, and re-entry services.
-              -  Drastically shift how technology is used in corrections by incubating and launching innovative programs and ventures.
-
             <p>
-              Working in partnership with other Massachusetts colleges and universities in the Massachusetts Prison Education Consortium, TEJI has a humanities focus.  We believe that the humanities are humanizing, and that fostering philosophic, social, and literary discussion in prison helps the incarcerated to re-conceive their lives.  Data shows conclusively that post-secondary education in prison improves outcomes as crucial as recidivism, employment for inmates post-release, and conduct and culture in prison.
+              TEJI aims to enhance the prospects for incarcerated individuals by empowering them to reach their potential and re-define their identity through higher education and the use of technology to prepare for reentry.  The social-emotional benefits of education, such as an increased sense of self-worth and self-motivation, coupled with job readiness preparation, are immeasurable.
             </p>
+
             <p>
-              TEJI seeks to do its part to attenuate mass incarceration and stratification of opportunity.  We provide a unique opportunity for MIT students to learn about parts of the human experience that are not commonly available to them, and to offer their skills in a way that makes Massachusetts safer and more educated.
+              Through working and studying with justice-involved individuals under the auspices of TEJI, MIT students experience the issues and challenges facing men and women who are incarcerated in prisons and jails. They gain firsthand knowledge regarding the complexities surrounding America’s incarcerated population, have the potential to develop a sustained commitment to community involvement, and develop increased empathy and compassion, as they experience hands-on the humanization of those who have been de-humanized by our society. As future leaders in the United States and across the world, these experiences provide useful and necessary development opportunities that will enhance their future work.
             </p>
+
             <p>
-              The program includes an ever expanding group of initiatives:
-              1]  ‘Inside-out” (™) and other ‘blended university level classes where MIT and incarcerated students learn together
-              2] Teaching, tutoring and TAing opportunities for MIT students in Massachusetts correctional institutions.
-              3] Skill-based training programs such as Coders Beyond Bars, that provide the incarcerated with employment-ready skills
-            </p>            
+              TEJI has accomplished much in its short existence, including:
+            </p>
+
+            <ul className="accomplishments">
+              <li key={1}>
+                <span className="icon has-text-info">
+                  <i className="far fa-check-circle"></i>
+                </span>
+                Partnering with a wide range of institutions, both higher education and technology, to develop programming that will reinvent prison education
+              </li>
+              <li key={2}>
+                <span className="icon has-text-info">
+                  <i className="far fa-check-circle"></i>
+                </span>
+                Supporting classes in prison that include both MIT students and incarcerated individuals
+              </li>
+              <li key={3}>
+                <span className="icon has-text-info">
+                  <i className="far fa-check-circle"></i>
+                </span>
+                Recruiting and supporting tutors and teaching assistants for prisons and jails
+              </li>
+              <li key={4}>
+                <span className="icon has-text-info">
+                  <i className="far fa-check-circle"></i>
+                </span>
+                Sponsoring debates with Harvard and MIT students debating incarcerated individuals
+              </li>
+              <li key={5}>
+                <span className="icon has-text-info">
+                  <i className="far fa-check-circle"></i>
+                </span>
+                Scheduling a speaker series regarding topics of interest to prison education
+              </li>
+              <li key={6}>
+                <span className="icon has-text-info">
+                  <i className="far fa-check-circle"></i>
+                </span>
+                Fostering the formation of a student corrections education and social justice reform group
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -51,3 +82,15 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
+export const tejiImageQuery = graphql`
+  query TEJIImageQuery {
+      img: file(relativePath: { eq: "about/teji.png" }) {
+        childImageSharp {
+          sizes(maxWidth: 1200) {
+            ...GatsbyImageSharpSizes_noBase64
+          }
+        }
+      }
+  }
+`

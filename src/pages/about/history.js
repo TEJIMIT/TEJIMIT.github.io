@@ -11,7 +11,7 @@ const History = () => {
             <AboutMenu />
           </div>
           <div className="column is-7">
-            <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>
+            <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>
               History
             </h2>
             <div className="timeline is-centered">
@@ -30,7 +30,7 @@ const History = () => {
               </div>
               <div className="timeline-item">
                 <div className="timeline-marker is-danger is-icon">
-                  <i class="fa fa-flag"></i>
+                  <i className="fa fa-flag"></i>
                 </div>
                 <div className="timeline-content">
                   <p className="heading">September 5, 2018</p>

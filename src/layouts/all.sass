@@ -1,4 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables"
+$gap: 128px
+
 @import "~bulma"
 @import "~bulma-timeline"
 
@@ -6,8 +8,14 @@
 @import "src/layouts/styles/variables"
 @import "src/layouts/styles/fonts"
 
+
+
+
 body
   color: $black
+
+  p
+    margin-bottom: 15px
 
   a
     color: $mit-dark-gray
@@ -57,6 +65,9 @@ body
   font-family: "Oswald", Arial, sans-serif
   color: $black
 
+.title.page-title
+  margin-bottom: 2rem
+
 @import "src/layouts/styles/header"
 @import "src/layouts/styles/topnav"
 @import "src/layouts/styles/navbar"
@@ -68,3 +79,5 @@ body
 @import "src/layouts/styles/press"
 @import "src/layouts/styles/card"
 @import "src/layouts/styles/initiatives"
+@import "src/layouts/styles/partners"
+@import "src/layouts/styles/about"

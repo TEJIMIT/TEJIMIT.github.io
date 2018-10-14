@@ -31,8 +31,6 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-
-
   - name: "resources"
     label: "Resources"
     files:

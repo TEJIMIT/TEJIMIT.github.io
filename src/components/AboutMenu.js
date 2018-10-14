@@ -13,21 +13,21 @@ const AboutMenu = () => {
           <Link
             className='menu-item'
             to='/about/'>
-            About Us
+            Introduction
           </Link>
         </li>
-        <li key='history'>
+        <li key='whymit'>
           <Link
             className='menu-item'
-            to='/about/history/'>
-            History
+            to='/about/whymit/'>
+            Why MIT
           </Link>
         </li>
         <li key='staff'>
           <Link
             className='menu-item'
-            to='/about/staff/'>
-            Staff
+            to='/about/team/'>
+            Team
           </Link>
         </li>
         <li key='partners'>
@@ -37,11 +37,11 @@ const AboutMenu = () => {
             Partners
           </Link>
         </li>
-        <li key='directions'>
+        <li key='esg'>
           <Link
             className='menu-item'
-            to='/about/directions/'>
-            Map & Directions
+            to='/about/esg/'>
+            About ESG
           </Link>
         </li>
       </ul>

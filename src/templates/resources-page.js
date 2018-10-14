@@ -7,7 +7,7 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section>
       <div className="container">
         <div id="resources">
           <PageContent className="content" content={content} />
@@ -20,19 +20,19 @@ export const ResourcesPageTemplate = ({ title, content, contentComponent }) => {
 ResourcesPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  contentComponent: PropTypes.fun
+  contentComponent: PropTypes.func
 }
 
 
 const ResourcesPage = ({ data }) => {
-  const { page } = data
-  console.log(HTMLContent)
+  const { page } = data;
+
   return (
     <section className="section">
       <div className="container">
         <div id="resources" className="columns">
           <div className="column is-three-quarters">
-            <h2 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h2 className="title is-size-2 has-text-weight-bold is-bold-light page-title">
               Resources
             </h2>
             <ResourcesPageTemplate
@@ -53,7 +53,6 @@ export const resourcePageQuery = graphql`
       html
       frontmatter {
         title
-        path
       }
     }
   }

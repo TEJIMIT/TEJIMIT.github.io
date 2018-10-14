@@ -16,7 +16,7 @@ const Directions = (props) => {
             <AboutMenu />
           </div>
           <div className="column is-7">
-            <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>
+            <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>
               Maps &amp; Directions
             </h2>
             <div className='contact'>

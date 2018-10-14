@@ -2,37 +2,62 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
+import mpec from '../../img/initiatives/mpec.jpg';
+import cbb from '../../img/initiatives/cbb.jpg';
+import mural from '../../img/initiatives/mural.jpg';
+import research from '../../img/initiatives/research.jpg';
+
 
 class Initiatives extends React.Component {
 
-  renderProjects(proj) {
-    const { slug } = proj.node.fields;
-    const { title, path } = proj.node.frontmatter;
-
-    return (
-        <li key={title} className="initiative-item">
-          <Link to={path}>
-            <figure key={title} className="image">
-              <img src="https://fakeimg.pl/400x300/" alt="Placeholder image" />
-              <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3 has-text-white-bis">{title}</h3>
-            </figure>
-          </Link>
-        </li>
-      );
-  }
-
   render() {
-    const { data } = this.props;
-    const { edges: inits } = data.initiatives;
-
     return (
       <section className="section">
         <div className="container">
           <div id="projects" className="columns">
             <div className="column">
-              <h2 className='title is-size-2 has-text-weight-bold is-bold-light'>Initiatives</h2>
+              <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>Initiatives</h2>
               <ul className="initiative-list is-inline-flex-mobile">
-                {inits.map(this.renderProjects)}
+                <li key="mpec" className="initiative-item">
+                  <Link to="initiatives/mpec">
+                    <figure className="image">
+                      <img src={mpec} alt="Placeholder image" />
+                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3 has-text-white-bis">
+                        Massachusetts Prison Education Consortium
+                      </h3>
+                    </figure>
+                  </Link>
+                </li>
+                <li key="cbb" className="initiative-item">
+                  <Link to="initiatives/coders-beyond-bars">
+                    <figure className="image">
+                      <img src={cbb} alt="Placeholder image" />
+                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3 has-text-white-bis">
+                        Coders Beyond Bars
+                      </h3>
+                    </figure>
+                  </Link>
+                </li>
+                <li key="ar-mural" className="initiative-item">
+                  <Link to="initiatives/AR-mural">
+                    <figure className="image">
+                      <img src={mural} alt="Placeholder image" />
+                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3 has-text-white-bis">
+                        AR Mural
+                      </h3>
+                    </figure>
+                  </Link>
+                </li>
+                <li key="research" className="initiative-item">
+                  <Link to="initiatives/research">
+                    <figure className="image">
+                      <img src={research} alt="Placeholder image" />
+                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3 has-text-white-bis">
+                        Research
+                      </h3>
+                    </figure>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -42,26 +67,3 @@ class Initiatives extends React.Component {
   }
 }
 export default Initiatives;
-
-
-export const pageQuery = graphql`
-  query ProjectQuery {
-    initiatives: allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___title]},
-        filter: { frontmatter: { templateKey: { eq: "initiative-page" } } }
-      ) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              path
-            }
-          }
-        }
-      }
-  }
-`

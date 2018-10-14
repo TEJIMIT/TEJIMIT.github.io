@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
 
+
 class Press extends React.Component {
 
   renderPosts(posts) {
@@ -67,7 +68,7 @@ class Press extends React.Component {
         <div className="container">
           <div id="news" className="columns">
             <div className="column">
-              <h2 className="title has-text-weight-bold is-size-2">
+              <h2 className="title has-text-weight-bold is-size-2  page-title">
                 Press and Media
               </h2>
               {this.renderPosts(posts)}

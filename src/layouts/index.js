@@ -1,11 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Navbar from '../components/Navbar'
-import TopNavBar from '../components/TopNavBar'
-import Footer from '../components/Footer'
-import './all.sass'
+import Navbar from '../components/Navbar';
+import TopNavBar from '../components/TopNavBar';
+import Footer from '../components/Footer';
+
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+import './all.sass';
+
+
 
 
 const TemplateWrapper = ({ children }) => {

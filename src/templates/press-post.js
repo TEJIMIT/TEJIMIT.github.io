@@ -21,7 +21,7 @@ export const PressPostTemplate = ({
         <div id="news-post" className="columns">
           {helmet || ''}
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light page-title">
               {title}
             </h1>
             <p>{description}</p>
