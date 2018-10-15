@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Img from "gatsby-image";
+import Links from 'gatsby-link';
 
 import AboutMenu from '../../components/AboutMenu';
 
@@ -34,7 +35,15 @@ class Partners extends Component {
         <div className="container">
           <div id="partners" className="columns">
             <div className="column is-2">
-              <AboutMenu />
+              <div className="is-hidden-mobile is-hidden-tablet-only">
+                <AboutMenu />
+              </div>
+              <div className="is-hidden-desktop">
+                <Links to="/about/team/">&larr; Team</Links>
+                <span className="is-pulled-right">
+                  <Links to="/about/esg/">About ESG &rarr;</Links>
+                </span>
+              </div>
             </div>
             <div className="column is-10">
               <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>

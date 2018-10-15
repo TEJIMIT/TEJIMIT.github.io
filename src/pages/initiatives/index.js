@@ -19,7 +19,7 @@ class Initiatives extends React.Component {
               <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>Initiatives</h2>
               <ul className="initiative-list is-inline-flex-mobile">
                 <li key="mpec" className="initiative-item">
-                  <Link to="initiatives/mpec">
+                  <Link to="/initiatives/mpec/">
                     <figure className="image">
                       <img src={mpec} alt="Placeholder image" />
                       <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3">
@@ -29,7 +29,7 @@ class Initiatives extends React.Component {
                   </Link>
                 </li>
                 <li key="cbb" className="initiative-item">
-                  <Link to="initiatives/coders-beyond-bars">
+                  <Link to="/initiatives/coders-beyond-bars/">
                     <figure className="image">
                       <img src={cbb} alt="Placeholder image" />
                       <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3">
@@ -39,7 +39,7 @@ class Initiatives extends React.Component {
                   </Link>
                 </li>
                 <li key="ar-mural" className="initiative-item">
-                  <Link to="initiatives/AR-mural">
+                  <Link to="/initiatives/AR-mural/">
                     <figure className="image">
                       <img src={mural} alt="Placeholder image" />
                       <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3">
@@ -49,7 +49,7 @@ class Initiatives extends React.Component {
                   </Link>
                 </li>
                 <li key="research" className="initiative-item">
-                  <Link to="initiatives/research">
+                  <Link to="/initiatives/research/">
                     <figure className="image">
                       <img src={research} alt="Placeholder image" />
                       <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3">

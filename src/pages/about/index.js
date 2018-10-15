@@ -1,4 +1,5 @@
 import React from 'react';
+import Links from 'gatsby-link';
 import Img from "gatsby-image";
 
 import AboutMenu from '../../components/AboutMenu';
@@ -10,11 +11,16 @@ const AboutUs = ({ data }) => {
   return (
     <section className="section">
       <div className="container">
-        <div id="about" className="columns">
-          <div className="column is-2">
-            <AboutMenu />
+        <div id="about" className="columns is-desktop">
+          <div className="column is-3-desktop is-2-widescreen">
+            <div className="is-hidden-mobile is-hidden-tablet-only">
+              <AboutMenu />
+            </div>
+            <div className="is-hidden-desktop">
+              <span className="is-pulled-right"><Links to="/about/whymit/">Why MIT &rarr;</Links></span>
+            </div>
           </div>
-          <div className="column is-10">
+          <div className="column is-9-desktop is-10-widescreen">
             <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>
               About Us
             </h2>
