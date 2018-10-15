@@ -28,7 +28,7 @@ const AboutESG = ({ data }) => {
               Since its founding in 1969, ESG has grown and evolved, adding new initiatives that expand and enhance the freshman experience. We offer more seminars than any other single department within MIT, ranging from the math of toys and games to special topics in physics to the bio-chemical processes of drugs on the human brain. ESG provides an ideal environment for students to explore their educational passions and for academics and researchers to evolve and incubate new ways of teaching. Creativity, innovation, and change are hallmarks of the ESG experience.
             </p>
 
-            <p>Read more about ESG <a href="http://esg.mit.edu/">here</a>.</p>
+            <p>Learn more about ESG <a href="http://esg.mit.edu/">here</a>.</p>
           </div>
         </div>
       </div>

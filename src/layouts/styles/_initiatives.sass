@@ -1,3 +1,5 @@
+@import "src/layouts/styles/variables"
+
 .initiative-list
   display: flex
   flex-direction: row
@@ -7,10 +9,18 @@
   padding: 1.5em
   width: 100%
   .title
+    color: $white
     display: flex
     flex-direction: column
     justify-content: center
     text-shadow: 2px 2px $mit-dark-gray
+
+  .image
+    opacity: 0.85
+    box-shadow: 0 4px 8px 0 $mit-dark-gray
+    &:hover
+      opacity: 1
+      box-shadow: 0 4px 8px 0 $mit-red
 
 @media screen and (min-width: $tablet)
   .initiative-item

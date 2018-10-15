@@ -1,12 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faFacebook,
-  faTwitter,
-  faInstagram,
-  faYoutube
-} from '@fortawesome/free-brands-svg-icons'
+import React from 'react';
+import Link from 'gatsby-link';
 
 const Footer = () => (
   <footer className='footer'>
@@ -42,30 +35,11 @@ const Footer = () => (
           </ul>
         </div>
         <div className='column footer-social'>
-          <a href="#" className='footer-social-link'>
-            <FontAwesomeIcon
-              icon={faFacebook}
-              size="2x"
-             />
-          </a>
-          <a href="#" className='footer-social-link'>
-            <FontAwesomeIcon
-               icon={faTwitter}
-               size="2x"
-              />
-          </a>
-          <a href="#" className='footer-social-link'>
-            <FontAwesomeIcon
-              icon={faInstagram}
-              size="2x"
-             />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCMrzgqxPPD5wDYhSXYpol4w" className='footer-social-link'>
-            <FontAwesomeIcon
-              icon={faYoutube}
-              size="2x"
-             />
+          <p>Follow Us:</p>
+          <a href="https://www.linkedin.com/company/teji-mit/" className='footer-social-link'>
+            <span className="icon ">
+              <i className="fab fa-linkedin fa-2x"></i>
+            </span>
           </a>
         </div>
       </div>
@@ -78,4 +52,4 @@ const Footer = () => (
   </footer>
 )
 
-export default Footer
+export default Footer;

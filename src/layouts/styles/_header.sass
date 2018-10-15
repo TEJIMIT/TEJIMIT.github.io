@@ -1,13 +1,27 @@
-.header
-  background: url('../img/header_background.jpg') no-repeat top center
-  min-height: 45vw
+@import "src/layouts/styles/variables"
+
+#header
+  display: flex
+  background: url('../img/debate2.png') no-repeat top center
+  min-height: 35vh
   background-size: 100% 100%
 
-@media only screen and (min-width: 768px)
-  .header
-    min-height: 30vw
+  @media screen and (min-width: $tablet)
+    background: url('../img/header.png') no-repeat top center
+    min-height: 45vh
+    background-size: 100% 100%
 
+  .hero-body
+    padding: 30px 0 30px 10px
+    display: flex
 
-@media only screen and (min-width: 1023px)
-  .header
-    min-height: 25vw
+    .container
+      align-self: flex-end
+
+      .mission-box
+        align-self: flex-end
+        border-radius: 0
+        background-color: rgba(0,0,0,0.5)
+        max-width: 75%
+        .title
+          color: $mit-light-gray

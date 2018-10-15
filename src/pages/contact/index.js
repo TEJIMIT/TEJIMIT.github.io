@@ -9,11 +9,11 @@ const Contact = () => {
   return (
     <section className="section">
       <div className="container">
-        <div id="about" className="columns">
-          <div className="column is-7">
-            <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>
-              Contact Us
-            </h2>
+        <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>
+          Contact Us
+        </h2>
+        <div className="columns is-desktop">
+          <div className="column is-7-desktop">
             <div className='contact-information'>
               <div className='contact-name'>
                 <h4 className='is-size-4'>The Educational Justice Institute</h4>
@@ -33,8 +33,8 @@ const Contact = () => {
                 <p>E-mail: <a href='mailto:teji@mit.edu'>teji@mit.edu</a></p>
               </div>
             </div>
-
-            <h4 className="title size-4">Map</h4>
+          </div>
+          <div className="column is-5-desktop">
             <div className='contact-map'>
               <GoogleMapReact
                   bootstrapURLKeys={{ key: GOOGLE_MAPS_API }}
@@ -53,74 +53,6 @@ const Contact = () => {
                   </div>
                 </GoogleMapReact>
             </div>
-
-            <h4 className="title size-4">Message</h4>
-            <form
-              className="contact-form"
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <div className="field">
-                <label className="label">Name</label>
-                <div className="control has-icons-right">
-                  <input
-                    className="input"
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="field">
-                <label className="label">Email</label>
-                <div className="control">
-                  <input
-                    className="input"
-                    type="email"
-                    name="email"
-                    placeholder="your@email.com"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="field">
-                <label className="label">Subject</label>
-                <div className="control">
-                  <input
-                    className="input"
-                    type="text"
-                    name="subject"
-                    placeholder="Subject"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="field">
-                <label className="label">Message</label>
-                <div className="control">
-                  <textarea
-                    name="message"
-                    className="textarea"
-                    placeholder="Your Message"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="field">
-                <div className="control">
-                  <button
-                    className="button is-link submit is-pulled-right"
-                    type="submit"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>

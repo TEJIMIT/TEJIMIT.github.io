@@ -36,7 +36,7 @@ class Team extends Component {
               <h2 className='title is-size-2 has-text-weight-bold is-bold-light page-title'>
                 Team
               </h2>
-              <div className="columns">
+              <div id="lee" className="columns">
                 <div className="column is-one-quarter">
                   <figure className="image profile-image">
                     <img
@@ -51,7 +51,7 @@ class Team extends Component {
                     </h4>
                     •
                     <h6 className="subtitle is-size-6">
-                      Co-director
+                      Co-Director
                     </h6>
                   </div>
                   <div className="profile-contact">
@@ -76,7 +76,7 @@ class Team extends Component {
               </div>
               <hr />
 
-              <div className="columns">
+              <div id="carole" className="columns">
                 <div className="column is-one-quarter">
                   <figure className="image profile-image">
                     <img
@@ -91,7 +91,7 @@ class Team extends Component {
                     </h4>
                     •
                     <h6 className="subtitle is-size-6">
-                      Co-director
+                      Co-Director
                     </h6>
                   </div>
                   <div className="profile-contact">
@@ -102,7 +102,7 @@ class Team extends Component {
                     </a>
                   </div>
                   <p>
-                    Carole Cafferty joined TEJI as co-director in February of 2018. Carole co-directs all TEJI initiatives, manages all administrative aspects of TEJI interfacing with correctional facilities throughout Massachusetts, engaging in long-range planning, and handling all communications and event planning for the program. Her goals include envisioning and realizing new opportunities for education of justice-involved men and women, expanding the horizon of MIT students, increasing public service outreach to the broader Massachusetts community, and transforming the initiative into a multi-university consortium, based at MIT.
+                    Carole Cafferty joined TEJI as Co-Director in February of 2018. Carole co-directs all TEJI initiatives, manages all administrative aspects of TEJI interfacing with correctional facilities throughout Massachusetts, engaging in long-range planning, and handling all communications and event planning for the program. Her goals include envisioning and realizing new opportunities for education of justice-involved men and women, expanding the horizon of MIT students, increasing public service outreach to the broader Massachusetts community, and transforming the initiative into a multi-university consortium, based at MIT.
                   </p>
 
                   <p>
@@ -112,7 +112,7 @@ class Team extends Component {
               </div>
               <hr />
 
-              <div className="columns">
+              <div id="richard" className="columns">
                 <div className="column is-one-quarter">
                   <figure className="image profile-image">
                     <img
@@ -156,13 +156,13 @@ class Team extends Component {
                   </p>
 
                   <p>
-                    While at MIT, he volunteered to teach mathematics to incarcerated students at a correctional facility through the Petey Greene program.  From this experience as a volunteer tutor to incarcerate individuals, Richard was inspired to teach computer programming to incarcerated individuals.  Finding no appropriate channels or organization to make this a reality, Richard decided to launch Coders Beyond Bars in collaboration with Anjali Moorthy, a fellow Petey Greene program volunteer.
+                    While at MIT, he volunteered to teach mathematics to incarcerated students at a correctional facility through the Petey Greene program.  From this experience as a volunteer tutor to incarcerate individuals, Richard was inspired to teach computer programming to incarcerated individuals.
                   </p>
                 </div>
               </div>
               <hr />
 
-              <div className="columns">
+              <div id="anjali" className="columns">
                 <div className="column is-one-quarter">
                   <figure className="image profile-image">
                     <img
@@ -210,7 +210,7 @@ class Team extends Component {
               <hr />
 
 
-              <div className="columns">
+              <div id="brooke" className="columns">
                 <div className="column is-one-quarter">
                   <figure className="image profile-image">
                     <img
@@ -245,7 +245,7 @@ class Team extends Component {
               </div>
               <hr />
 
-              <div className="columns">
+              <div id="rachel" className="columns">
                 <div className="column is-one-quarter">
                   <figure className="image profile-image">
                     <img
@@ -275,7 +275,6 @@ class Team extends Component {
                   </p>
                 </div>
               </div>
-              <hr />
 
             </div>
           </div>

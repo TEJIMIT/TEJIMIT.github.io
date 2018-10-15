@@ -22,7 +22,7 @@ class Initiatives extends React.Component {
                   <Link to="initiatives/mpec">
                     <figure className="image">
                       <img src={mpec} alt="Placeholder image" />
-                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3 has-text-white-bis">
+                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3">
                         Massachusetts Prison Education Consortium
                       </h3>
                     </figure>
@@ -32,7 +32,7 @@ class Initiatives extends React.Component {
                   <Link to="initiatives/coders-beyond-bars">
                     <figure className="image">
                       <img src={cbb} alt="Placeholder image" />
-                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3 has-text-white-bis">
+                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3">
                         Coders Beyond Bars
                       </h3>
                     </figure>
@@ -42,7 +42,7 @@ class Initiatives extends React.Component {
                   <Link to="initiatives/AR-mural">
                     <figure className="image">
                       <img src={mural} alt="Placeholder image" />
-                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3 has-text-white-bis">
+                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3">
                         AR Mural
                       </h3>
                     </figure>
@@ -52,7 +52,7 @@ class Initiatives extends React.Component {
                   <Link to="initiatives/research">
                     <figure className="image">
                       <img src={research} alt="Placeholder image" />
-                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3 has-text-white-bis">
+                      <h3 className="title is-overlay has-text-centered has-text-weight-bold is-size-3">
                         Research
                       </h3>
                     </figure>
