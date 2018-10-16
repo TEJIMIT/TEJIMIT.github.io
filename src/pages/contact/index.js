@@ -41,6 +41,7 @@ class Contact extends Component {
                     </div>
                     <div className='contact-phone'>
                       <p>Phone: (617) 452-3756</p>
+                      <p>Fax: (617) 253-8584</p>
                     </div>
                     <div className='contact-email'>
                       <p>E-mail: <a href='mailto:teji@mit.edu'>teji@mit.edu</a></p>
