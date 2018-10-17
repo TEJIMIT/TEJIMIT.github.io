@@ -65,7 +65,7 @@ class Contact extends Component {
                         <div>TEJI</div>
                       </Popup>
                     </ReactMapGL>
-                    <a href="https://whereis.mit.edu/">https://whereis.mit.edu/</a>
+                    For directions to MIT, visit <a href="https://whereis.mit.edu/">https://whereis.mit.edu/</a>
                   </div>
                 </div>
               </div>
