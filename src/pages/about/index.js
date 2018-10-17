@@ -35,7 +35,7 @@ const AboutUs = ({ data }) => {
             </p>
 
             <p>
-              Through working and studying with justice-involved individuals under the auspices of TEJI, MIT students experience the issues and challenges facing men and women who are incarcerated in prisons and jails. They gain firsthand knowledge regarding the complexities surrounding America’s incarcerated population, have the potential to develop a sustained commitment to community involvement, and develop increased empathy and compassion, as they experience hands-on the humanization of those who have been de-humanized by our society. As future leaders in the United States and across the world, these experiences provide useful and necessary development opportunities that will enhance their future work.
+              Through working and studying with justice-involved individuals under the auspices of TEJI, MIT students experience the issues and challenges facing men and women who are incarcerated in prisons and jails. They gain firsthand knowledge regarding the complexities surrounding America’s incarcerated population, have the potential to develop a sustained commitment to community involvement, and develop increased empathy and compassion, as they directly experience the humanization of those who have been de-humanized by our society. As future leaders in the United States and across the world, these experiences provide useful and necessary development opportunities that will enhance their future work.
             </p>
 
             <p>

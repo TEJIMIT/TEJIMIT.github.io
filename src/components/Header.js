@@ -14,7 +14,7 @@ const Header = () => (
             <br />
             mass incarceration, social injustice, and barriers to reentry
             <br />
-            via education and technology.
+            via education and technology
           </h4>
         </div>
       </div>

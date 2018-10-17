@@ -35,7 +35,7 @@ class Contact extends Component {
                     <div className='contact-address'>
                       <p>
                         77 Massachusetts Ave. <br />
-                        24-612 <br />
+                        Building 24, Room 612 <br />
                         Cambridge, MA 02139
                       </p>
                     </div>
@@ -65,22 +65,7 @@ class Contact extends Component {
                         <div>TEJI</div>
                       </Popup>
                     </ReactMapGL>
-                    {/* <GoogleMapReact
-                        bootstrapURLKeys={{ key: GOOGLE_MAPS_API }}
-                        defaultCenter={{
-                          lat: 42.360571,
-                          lng: -71.0922101
-                        }}
-                        defaultZoom={16}
-                      >
-                        <div
-                          className="map-marker"
-                          lat={42.3609}
-                          lng={-71.09185}
-                        >
-                          <p>TEJI</p>
-                        </div>
-                      </GoogleMapReact> */}
+                    <a href="https://whereis.mit.edu/">https://whereis.mit.edu/</a>
                   </div>
                 </div>
               </div>

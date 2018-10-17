@@ -165,7 +165,7 @@ class Team extends Component {
                   </p>
 
                   <p>
-                    While at MIT, he volunteered to teach mathematics to incarcerated students at a correctional facility through the Petey Greene program.  From this experience as a volunteer tutor to incarcerate individuals, Richard was inspired to teach computer programming to incarcerated individuals.
+                    While at MIT, he volunteered to teach mathematics to incarcerated students at a correctional facility through the Petey Greene program.  From this experience as a volunteer tutor to incarcerated individuals, Richard was inspired to teach computer programming to incarcerated individuals.
                   </p>
                 </div>
               </div>
@@ -241,6 +241,14 @@ class Team extends Component {
                     <a href="mailto:brooke.wages@gmail.com">
                       <span className="icon ">
                         <i className="fas fa-envelope fa-lg"></i>
+                      </span>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/brooke-wages  "
+                      target="_blank"
+                    >
+                      <span className="icon ">
+                        <i className="fab fa-linkedin fa-lg"></i>
                       </span>
                     </a>
                   </div>

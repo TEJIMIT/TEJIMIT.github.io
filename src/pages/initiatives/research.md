@@ -9,4 +9,4 @@ Leveraging professional connections, knowledge of rules and regulation around co
 
 ![Tablet](/img/tablets.png)
 
-As a first step in this endeavor, we are building partnerships with correctional technology leaders such as American Prison Data Systems and Edovo that provides specialized educational tablets used in correctional facilities.  Working with these technology leaders, we aim to understand how technologies such as educational tablets can be used to shape incentives and behavioral norms that can guide human behavior in this unexplored, unique environment.
+As a first step in this endeavor, we are building partnerships with correctional technology leaders such as specialized educational tablet providers used in correctional facilities.  Working with these technology leaders, we aim to understand how technologies such as educational tablets can be used to shape incentives and behavioral norms that can guide human behavior in this unexplored, unique environment.
