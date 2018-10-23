@@ -74,6 +74,12 @@ export const imageQuery = graphql`
             eq: "jpg"
           }
         }
+        sort: {
+          fields: [
+            name
+          ]
+          order: ASC
+        }
       ) {
         totalCount
         edges {

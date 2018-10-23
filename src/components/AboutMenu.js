@@ -16,6 +16,13 @@ const AboutMenu = () => {
             Introduction
           </Link>
         </li>
+        <li key='college'>
+          <Link
+            className='menu-item'
+            to='/about/college/'>
+            College in Prison
+          </Link>
+        </li>
         <li key='whymit'>
           <Link
             className='menu-item'
