@@ -30,18 +30,25 @@ const Footer = () => (
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about/'>About</Link></li>
             <li><Link to='/initiatives/'>Initiatives</Link></li>
-            <li><Link to='/news/'>News</Link></li>
+            <li><Link to='/press/'>Press</Link></li>
             <li><Link to='/resources/'>Resources</Link></li>
             <li><Link to='/contact/'>Contact</Link></li>
           </ul>
         </div>
-        <div className='column footer-social'>
+        <div className='column'>
           <p>Follow Us:</p>
-          <a href="https://www.linkedin.com/company/teji-mit/" className='footer-social-link'>
-            <span className="icon ">
-              <i className="fab fa-linkedin fa-2x"></i>
-            </span>
-          </a>
+          <div className="footer-social">
+            <a href="https://www.linkedin.com/company/teji-mit/" className='footer-social-link'>
+              <span className="icon ">
+                <i className="fab fa-linkedin fa-2x"></i>
+              </span>
+            </a>
+            <a href="https://www.facebook.com/The-Educational-Justice-Institute-at-MIT-893214594217368/?ref=bookmarks" className='footer-social-link'>
+              <span className="icon ">
+                <i className="fab fa-facebook fa-2x"></i>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
